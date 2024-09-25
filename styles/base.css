@@ -1,63 +1,76 @@
+main {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
 body {
-    display: grid;
-    height: 100vh;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: auto auto 1fr auto;
+    background-color: white;
+    font-size: 22px;
+    margin: 0;
+    max-width: 900px;
 }
 
 header {
     background: #0C6291;
-    padding: 2rem;
-    grid-column: 1 / 4;
 }
 
 h1 {
     color: white;
-    grid-column: 1/4;
     text-align: center;
+    font-family: "Poppins", sans-serif;
 }
 
 h2 {
     text-align: center;
+
+    font-family: "Poppins", sans-serif;
+}
+
+h3 {
+    background-color: #0C6291;
+    margin-top: auto;
+    text-align: center;
+    font-family: "Poppins", sans-serif;
 }
 
 .prof-picture {
-    grid-column: 2/3;
     width: 10%;
     display: block;
     margin: 0 auto;
 
 }
 
-nav {
-    text-align: center;
-    background-color: #0D0C1D;
-    color: white;
-    padding: 25px;
-    grid-column: 1/4;
-}
-
 nav a {
     text-align: center;
+    background-color: black;
     color: white;
-    padding: 35px;
-    align-items: center;
+    max-width: 900px;
 }
 
 main {
     background: white;
     grid-column: 1 / 4;
     width: 100%;
-    padding: 1rem;
+    padding: 2rem;
 }
 
 .card {
-    text-align: left;
+
+    background-color: white;
+    border-style: groove;
+    border-width: 0.5px;
+    border-radius: 5px;
+    border-color: black;
+    margin: 10px;
 }
 
 footer {
     background: #0C6291;
     padding: 2rem;
     text-align: center;
-    grid-column: 1 / 4;
+}
+
+ul {
+    list-style: none;
+    text-align: left;
 }
