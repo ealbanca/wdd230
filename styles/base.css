@@ -1,13 +1,13 @@
 main {
-    max-width: 800px;
+    max-width: 700px;
     margin: 0 auto;
 }
 
 body {
     background-color: white;
     font-size: 22px;
-    margin: 0;
-    max-width: 900px;
+    margin: 0 auto;
+    max-width: 800px;
 }
 
 header {
@@ -16,35 +16,57 @@ header {
 
 h1 {
     color: white;
-    text-align: center;
     font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 35px;
+    display: inline;
+    float: right;
+    margin-right: 100px;
+    padding-top: 30px;
+
 }
 
 h2 {
+    color: black;
     text-align: center;
-
     font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
 h3 {
+    color: white;
     background-color: #0C6291;
     margin-top: auto;
     text-align: center;
     font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
 .prof-picture {
     width: 10%;
-    display: block;
-    margin: 0 auto;
+    margin-right: 100px;
+    display: inline;
+    margin-left: 50px;
+    padding-left: 8px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
 
+nav {
+    width: 700px;
 }
 
 nav a {
     text-align: center;
     background-color: black;
     color: white;
-    max-width: 900px;
+    width: 800px;
+    display: block;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 main {
