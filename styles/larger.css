@@ -1,0 +1,26 @@
+/* Media Query for Larger Viewer */
+@media (min-width: 48em) {
+    nav ul {
+        display: flex;
+        flex-direction: row;
+    }
+
+    nav ul li {
+        /* flex: 1 1 auto; Allow items to grow but not take up 100% width  */
+        width: auto;
+        /* Let the width be based on the content */
+        flex-grow: 1;
+        /* Allow the items to grow equally */
+        text-align: center;
+        /* Center align the anchor links */
+    }
+
+    main {
+        display: grid;
+        grid-template-columns: 1fr 30%;
+    }
+
+    h2 {
+        grid-column: span 2;
+    }
+}

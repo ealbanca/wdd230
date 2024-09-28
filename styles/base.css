@@ -56,7 +56,7 @@ h3 {
 }
 
 nav {
-    width: 700px;
+    width: 100%;
     font-family: "Poppins", sans-serif;
     font-weight: 200;
     font-style: normal;
@@ -69,7 +69,7 @@ nav a {
     font-style: normal;
     background-color: black;
     color: white;
-    width: 800px;
+    width: 100%;
     display: block;
     padding-top: 10px;
     padding-bottom: 10px;
