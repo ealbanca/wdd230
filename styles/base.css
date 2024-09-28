@@ -107,7 +107,7 @@ footer {
     font-family: "Poppins", sans-serif;
     font-style: normal;
     font-size: medium;
-    width: 100%;
+    max-width: 67.5rem;
     padding: 2rem;
 
 }
