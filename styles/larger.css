@@ -1,6 +1,6 @@
 /* Media Query for Larger Viewer */
 @media (min-width: 48em) {
-    nav a {
+    nav {
         display: flex;
         flex-direction: row;
         /* flex: 1 1 auto; Allow items to grow but not take up 100% width  */
