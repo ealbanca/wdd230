@@ -1,17 +1,27 @@
 main {
-    max-width: 700px;
+    width: 90%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 2rem;
+    padding: 2rem;
     margin: 0 auto;
 }
 
 body {
+    display: grid;
+    grid-template-rows: auto auto 1fr auto;
     background-color: white;
     font-size: 22px;
     margin: 0 auto;
-    max-width: 800px;
+    max-width: 67.5rem;
 }
 
 header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background: #0C6291;
+    padding: 2rem;
 }
 
 h1 {
@@ -20,11 +30,6 @@ h1 {
     font-weight: 400;
     font-style: normal;
     font-size: 35px;
-    display: inline;
-    float: right;
-    margin-right: 100px;
-    padding-top: 30px;
-
 }
 
 h2 {
@@ -56,7 +61,6 @@ h3 {
 }
 
 nav {
-    width: 100%;
     font-family: "Poppins", sans-serif;
     font-weight: 200;
     font-style: normal;
@@ -68,18 +72,11 @@ nav a {
     font-weight: 200;
     font-style: normal;
     background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
     color: white;
-    width: 100%;
-    display: block;
-    padding-top: 10px;
-    padding-bottom: 10px;
-}
-
-main {
-    background: white;
-    grid-column: 1 / 4;
-    width: 100%;
-    padding: 2rem;
 }
 
 .card {
