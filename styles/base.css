@@ -58,9 +58,8 @@ h3 {
 }
 
 .prof-picture {
-    height: 170px;
-    margin-right: 80px;
-    margin-left: 40px;
+    width: 14%;
+    margin-right: 20px;
 }
 
 #menu::before {
