@@ -67,23 +67,6 @@ h3 {
     padding-bottom: 20px;
 }
 
-nav a {
-    text-align: center;
-    font-family: "Poppins", sans-serif;
-    font-weight: 200;
-    font-style: normal;
-    background-color: black;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    color: white;
-    list-style-type: none;
-    width: 100%;
-    padding: 2rem;
-    text-decoration: none;
-}
-
 #menu::before {
     content: "≡";
     /* Hamburger icon */
@@ -94,36 +77,72 @@ nav a {
     /* 'X' icon when the menu is open */
 }
 
+#menu {
+    font-size: 1.5rem;
+    border: 0;
+    background: none;
+    color: #000;
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+    cursor: pointer;
+}
+
 .open .nav-item {
     display: block;
     /* Show items when navigation is open */
 }
 
-ul li {
-    margin: 1rem;
+.navigation {
+    display: none;
 }
 
-#navigation {
+.navigation.open {
+    display: block;
+}
+
+nav {
+    background-color: #ffffff;
+    color: #000;
+    padding: 15px 10px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    list-style: none;
 }
 
-#navigation a {
+nav a {
+    color: #000;
+    text-decoration: none;
+    display: block;
+    padding: 5px;
+}
+
+.navigation a {
     cursor: pointer;
     letter-spacing: 0.1rem;
     font-weight: 100;
     text-decoration: none;
     color: var(--accent3-color);
     transition: all ease-in-out 100ms;
+    text-align: center;
 }
 
-#navigation a:hover {
+
+.navigation a:hover {
     font-weight: 700;
     color: #12a0ec;
 }
+
+section ul {
+    list-style-type: none;
+}
+
 
 .card {
 
@@ -149,7 +168,11 @@ footer {
 
 }
 
-ul {
-    list-style: none;
-    text-align: left;
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
 }

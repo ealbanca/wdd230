@@ -1,15 +1,12 @@
 /* Media Query for Larger Viewer */
 @media (min-width: 48em) {
-    nav {
-        display: flex;
+    nav ul {
         flex-direction: row;
-        /* flex: 1 1 auto; Allow items to grow but not take up 100% width  */
-        width: auto;
-        /* Let the width be based on the content */
-        flex-grow: 1;
-        /* Allow the items to grow equally */
-        text-align: center;
-        /* Center align the anchor links */
+        justify-content: space-around;
+        background-color: black;
+        padding: 1rem;
+        color: white;
+
     }
 
     main {
@@ -19,5 +16,13 @@
 
     h2 {
         grid-column: span 2;
+    }
+
+    .navigation {
+        display: block;
+    }
+
+    #menu {
+        display: none;
     }
 }
