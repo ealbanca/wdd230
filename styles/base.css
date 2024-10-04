@@ -103,6 +103,14 @@ ul li {
     margin: 1rem;
 }
 
+#navigation {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+}
+
 .card {
 
     background-color: white;
