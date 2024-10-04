@@ -88,11 +88,6 @@ h3 {
     cursor: pointer;
 }
 
-.open .nav-item {
-    display: block;
-    /* Show items when navigation is open */
-}
-
 .navigation {
     display: none;
 }
