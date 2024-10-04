@@ -4,14 +4,13 @@
         flex-direction: row;
         justify-content: space-around;
         background-color: black;
-        padding: 1rem;
         color: white;
 
     }
 
     main {
         display: grid;
-        grid-template-columns: 1fr 30%;
+        grid-template-columns: 1fr 1fr;
     }
 
     h2 {
