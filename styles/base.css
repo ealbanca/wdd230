@@ -84,6 +84,16 @@ nav a {
     text-decoration: none;
 }
 
+#menu::before {
+    content: "≡";
+    /* Hamburger icon */
+}
+
+#menu.open::before {
+    content: "X";
+    /* 'X' icon when the menu is open */
+}
+
 .open .nav-item {
     display: block;
     /* Show items when navigation is open */
