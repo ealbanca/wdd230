@@ -84,6 +84,11 @@ nav a {
     text-decoration: none;
 }
 
+.open .nav-item {
+    display: block;
+    /* Show items when navigation is open */
+}
+
 ul li {
     margin: 1rem;
 }
