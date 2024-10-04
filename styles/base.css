@@ -115,20 +115,10 @@ nav a {
     text-decoration: none;
     display: block;
     padding: 5px;
+    color: white;
 }
 
-.navigation a {
-    cursor: pointer;
-    letter-spacing: 0.1rem;
-    font-weight: 100;
-    text-decoration: none;
-    color: var(--accent3-color);
-    transition: all ease-in-out 100ms;
-    text-align: center;
-}
-
-
-.navigation a:hover {
+nav a:hover {
     font-weight: 700;
     color: #12a0ec;
 }
