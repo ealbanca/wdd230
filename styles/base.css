@@ -58,8 +58,9 @@ h3 {
 }
 
 .prof-picture {
-    width: 14%;
-    margin-right: 20px;
+    height: 170px;
+    margin-right: 80px;
+    margin-left: 40px;
 }
 
 #menu::before {
@@ -81,7 +82,6 @@ h3 {
     right: 1rem;
     top: 1rem;
     cursor: pointer;
-    display: inline;
 }
 
 .navigation {
@@ -133,7 +133,6 @@ section ul {
     border-color: black;
     margin: 10px;
     display: block;
-    padding: 20px;
 
 }
 
