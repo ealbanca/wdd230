@@ -24,4 +24,8 @@
     #menu {
         display: none;
     }
+
+    iframe {
+        grid-column: span 2;
+    }
 }
