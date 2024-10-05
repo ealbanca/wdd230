@@ -26,10 +26,12 @@ body {
 }
 
 header {
-    justify-content: center;
     background: #0C6291;
     padding: 2rem;
     width: 100%;
+    align-items: center;
+    display: flex;
+    justify-content: flex-start;
 }
 
 h1 {
@@ -39,7 +41,8 @@ h1 {
     font-style: normal;
     font-size: 40px;
     text-align: center;
-    display: inline-flex;
+    display: flex;
+    justify-content: flex-start;
 }
 
 h2 {
@@ -65,12 +68,15 @@ h3 {
     height: 170px;
     margin-right: 80px;
     margin-left: 40px;
-    display: inline-flex;
+    display: flex;
+    justify-content: flex-start;
 }
 
 #menu::before {
     content: "≡";
     justify-content: right;
+    color: white;
+
     /* Hamburger icon */
 }
 
