@@ -23,7 +23,6 @@ body {
 }
 
 header {
-    display: flex;
     justify-content: center;
     background: #0C6291;
     padding: 2rem;
@@ -37,6 +36,7 @@ h1 {
     font-style: normal;
     font-size: 50px;
     text-align: center;
+    display: inline;
 }
 
 h2 {
@@ -65,6 +65,7 @@ h3 {
 
 #menu::before {
     content: "≡";
+    justify-content: right;
     /* Hamburger icon */
 }
 
