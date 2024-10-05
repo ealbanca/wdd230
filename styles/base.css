@@ -11,6 +11,9 @@ main {
     grid-gap: 2rem;
     padding: 2rem;
     margin: 0 auto;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
 }
 
 body {
@@ -55,6 +58,7 @@ h3 {
     font-family: "Poppins", sans-serif;
     font-weight: 400;
     font-style: normal;
+    margin-bottom: 20px;
 }
 
 .prof-picture {
@@ -133,9 +137,9 @@ section ul {
     border-width: 0.5px;
     border-radius: 5px;
     border-color: black;
-    margin: 10px;
+    margin-left: 10px;
     display: block;
-
+    padding: 20px;
 }
 
 footer {
