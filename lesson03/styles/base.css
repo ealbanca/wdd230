@@ -5,10 +5,14 @@
 }
 
 header {
-    background: #66CAF5;
+    background: #072453;
     padding: 2rem;
     width: 100%;
     text-align: center;
+    font-family: "Merriweather", serif;
+    font-weight: 700;
+    font-style: normal;
+    color: white;
 }
 
 nav {
@@ -53,6 +57,7 @@ section ul {
     margin-top: 2rem;
     margin-left: 2rem;
     margin-right: 2rem;
+    margin-bottom: 1rem;
     display: block;
     padding: 20px;
 }
@@ -69,10 +74,13 @@ section ul {
 h2 {
     text-align: center;
     padding-bottom: 2rem;
+    font-family: "Merriweather", serif;
+    font-weight: 700;
+    font-style: normal;
 }
 
 footer {
-    background: #66CAF5;
+    background: #072453;
     color: white;
     text-align: center;
     font-family: "Poppins", sans-serif;
@@ -81,3 +89,13 @@ footer {
     padding: 2rem;
 
 }
+
+p1 {
+    font-family: "Merriweather", serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: large;
+
+}
+
+p2 {}
