@@ -90,12 +90,10 @@ footer {
 
 }
 
-p1 {
+.highlight {
     font-family: "Merriweather", serif;
     font-weight: 700;
     font-style: normal;
     font-size: large;
 
 }
-
-p2 {}
