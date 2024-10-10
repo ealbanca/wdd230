@@ -75,6 +75,8 @@ h3 {
 #menu::before {
     content: "≡";
     justify-content: right;
+    width: 35px;
+    height: 50px;
     color: white;
 
     /* Hamburger icon */
@@ -90,11 +92,10 @@ h3 {
     border: 0;
     background: none;
     color: #000;
-    position: absolute;
+    position: fixed;
     right: 1rem;
     top: 1rem;
     cursor: pointer;
-    display: inline;
 }
 
 .navigation {
