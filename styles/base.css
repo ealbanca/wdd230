@@ -148,6 +148,17 @@ section ul {
     margin-left: 10px;
     display: block;
     padding: 20px;
+
+}
+
+.card a:active,
+.card a:link,
+.card a:visited {
+    color: #000;
+}
+
+.card a:hover {
+    color: #12a0ec;
 }
 
 iframe {
