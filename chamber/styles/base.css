@@ -12,7 +12,7 @@ body {
     background-color: white;
     font-size: 22px;
     margin: 0 auto;
-    max-width: 90rem;
+    max-width: 67.5rem;
 }
 
 header {
@@ -109,7 +109,7 @@ main {
 
 
 #hero-image {
-    width: 90rem;
+    width: 67.5rem;
     height: 500px;
     object-fit: cover;
     object-position: 100% 0;
