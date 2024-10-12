@@ -72,16 +72,14 @@ section ul {
 #menu::before {
     content: "≡";
     justify-content: right;
-    width: 35px;
-    height: 50px;
+    font-size: 80px;
     color: #072453;
 
     /* Hamburger icon */
 }
 
 #menu.open::before {
-    content: "X";
-    /* 'X' icon when the menu is open */
+    content: "x";
 }
 
 #menu {

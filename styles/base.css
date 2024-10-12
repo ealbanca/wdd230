@@ -75,6 +75,7 @@ h3 {
 #menu::before {
     content: "≡";
     justify-content: right;
+    font-size: 80;
     width: 35px;
     height: 50px;
     color: white;
