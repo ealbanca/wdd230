@@ -4,17 +4,7 @@
     box-sizing: border-box;
 }
 
-main {
-    width: 100%;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-gap: 2rem;
-    padding: 2rem;
-    margin: 0 auto;
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-bottom: 20px;
-}
+
 
 body {
     display: grid;
@@ -104,6 +94,45 @@ section ul {
     top: 1rem;
     cursor: pointer;
 }
+
+main {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 2rem;
+    padding: 2rem;
+    margin: 0 auto;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+}
+
+
+#hero-image {
+    width: 90rem;
+    height: 500px;
+    object-fit: cover;
+    object-position: 100% 0;
+    justify-content: center;
+    align-items: center;
+}
+
+.events,
+.weather,
+.spotlights {
+
+    background-color: white;
+    border-style: groove;
+    border-width: 0.5px;
+    border-radius: 5px;
+    border-color: black;
+    margin-left: 10px;
+    display: block;
+    padding: 20px;
+
+}
+
+
 
 footer {
     background: #072453;

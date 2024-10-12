@@ -21,11 +21,15 @@
         display: block;
     }
 
+    .hero {
+        display: block;
+        grid-column: span 2;
+    }
+
     #menu {
         display: none;
     }
 
-    iframe {
-        grid-column: span 2;
-    }
+
+
 }
