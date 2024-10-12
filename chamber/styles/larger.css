@@ -1,0 +1,31 @@
+/* Media Query for Larger Viewer */
+@media (min-width: 48em) {
+    nav ul {
+        flex-direction: row;
+        justify-content: space-around;
+        background-color: #072453;
+        color: white;
+
+    }
+
+    main {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    h2 {
+        grid-column: span 2;
+    }
+
+    .navigation {
+        display: block;
+    }
+
+    #menu {
+        display: none;
+    }
+
+    iframe {
+        grid-column: span 2;
+    }
+}

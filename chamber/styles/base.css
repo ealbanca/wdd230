@@ -40,6 +40,14 @@ header {
     justify-content: flex-start;
 }
 
+.navigation {
+    display: none;
+}
+
+.navigation.open {
+    display: block;
+}
+
 nav {
     background-color: #072453;
     color: white;
@@ -76,7 +84,7 @@ section ul {
     justify-content: right;
     width: 35px;
     height: 50px;
-    color: white;
+    color: #072453;
 
     /* Hamburger icon */
 }
