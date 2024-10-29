@@ -177,12 +177,9 @@ main {
 
 
 #hero-image {
-    width: 67.5rem;
-    height: 500px;
+    width: 100%;
+    height: auto;
     object-fit: cover;
-    object-position: 100% 0;
-    justify-content: center;
-    align-items: center;
 }
 
 .events,
