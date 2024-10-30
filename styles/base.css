@@ -137,7 +137,6 @@ nav a:hover {
 .hero {
     margin-top: 10px;
     position: relative;
-    grid-column: 1fr;
 }
 
 .hero img {
