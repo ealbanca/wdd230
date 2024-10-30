@@ -11,22 +11,26 @@
 
     main {
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: 2fr 0.5fr 0.5fr 1fr;
+        grid-gap: 10px;
+        align-items: center;
+        text-align: center;
     }
+}
 
-    h2 {
-        grid-column: span 2;
-    }
+h2 {
+    grid-column: span 2;
+}
 
-    h4 {
-        font-family: "Poppins", sans-serif;
-    }
+h4 {
+    font-family: "Poppins", sans-serif;
+}
 
-    .navigation {
-        display: block;
-    }
+.navigation {
+    display: block;
+}
 
-    #menu {
-        display: none;
-    }
+#menu {
+    display: none;
 }
