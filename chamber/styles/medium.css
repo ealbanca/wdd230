@@ -1,0 +1,32 @@
+/* Media Query for medium Viewer */
+@media (541px <=width <=819px) {
+
+    nav ul {
+        flex-direction: row;
+        justify-content: space-around;
+        background-color: #072453;
+        color: white;
+
+    }
+
+    main {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    h2 {
+        grid-column: span 2;
+    }
+
+    h4 {
+        font-family: "Poppins", sans-serif;
+    }
+
+    .navigation {
+        display: block;
+    }
+
+    #menu {
+        display: none;
+    }
+}
