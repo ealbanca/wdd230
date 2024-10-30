@@ -149,8 +149,8 @@ nav a:hover {
 
 .herolabel {
     position: absolute;
-    top: 80px;
-    left: 80px;
+    top: 30px;
+    left: 30px;
     background: radial-gradient(#fff, white);
     border: 1px solid rgba(0, 0, 0, .75);
     padding: 1rem;
@@ -163,7 +163,7 @@ nav a:hover {
     margin: 0;
     padding: .25rem;
     font-weight: 700;
-    font-size: 1.75rem;
+    font-size: 1rem;
     font-family: "Great Vibes", serif;
 }
 
