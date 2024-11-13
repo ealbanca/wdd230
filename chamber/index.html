@@ -36,7 +36,7 @@
 <body>
     <header>
         <a id="logo_link" href="index.html">
-            <img class="logo" src="images/logo.png" alt="Logo Bogota chamber of commerce">
+            <img class="logo" src="images/logo.webp" alt="Logo Bogota chamber of commerce">
         </a>
         <button id="menu"></button>
         <!-- Rounded switch -->
@@ -60,7 +60,7 @@
             <picture>
                 <source srcset="images/hero-small.webp" media="(max-width:400px)" type="image/webp">
                 <source srcset="images/hero-medium.webp" media="(min-width: 401px)" type="image/webp">
-                <img src="images/hero.webp" alt="Hero image">
+                <img src="images/hero-large.webp" alt="Hero image">
             </picture>
             <div class="herolabel">
                 <h1>Bogota Chamber of Commerce</h1>
@@ -74,7 +74,17 @@
 
 
         <section class=" weather">
-            <h3>Weather Card</h3>
+            <h2>Weather in Bogota Colombia</h2>
+            <div class="data-table">
+                <span class="data-title">Temperature (°F):</span>
+                <span class="data-value" id="current-temperature">45</span>
+                <span class="data-title">Conditions:</span>
+                <span class="data-value">Sunny</span>
+                <span class="data-title">Wind (mph):</span>
+                <span class="data-value" id="wind-speed">4</span>
+                <span class="data-title">Wind Chill (°F):</span>
+                <span class="data-value" id="wind-chill-value"></span>
+            </div>
         </section>
 
 
@@ -94,6 +104,7 @@
     <script src="scripts/getdates.js"></script>
     <script src="scripts/hamburger.js"></script>
     <script src="scripts/darkmode.js"></script>
+    <script src="scripts/windchill.js"></script>
 
 
 </body>

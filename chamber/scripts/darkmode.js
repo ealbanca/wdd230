@@ -8,9 +8,9 @@ function myFunction() {
     body.classList.toggle("dark-mode");
 
     if (body.classList.contains('dark-mode')) {
-        logoImg.src = "images/logo-dark.png"; // Change to dark logo
+        logoImg.src = "images/logo-dark.webp"; // Change to dark logo
     } else {
-        logoImg.src = "images/logo.png"; //Revert to light logo
+        logoImg.src = "images/logo.webp"; //Revert to light logo
     }
 
 }
