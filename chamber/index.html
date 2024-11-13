@@ -17,7 +17,6 @@
 
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/base.css">
-    <link rel="stylesheet" href="styles/medium.css">
     <link rel="stylesheet" href="styles/larger.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -58,8 +57,8 @@
     <main>
         <div class="hero">
             <picture>
-                <source srcset="images/hero-small.webp" media="(max-width:400px)" type="image/webp">
-                <source srcset="images/hero-medium.webp" media="(min-width: 401px)" type="image/webp">
+                <source srcset="images/hero-small.webp" media="(max-width:500px)" type="image/webp">
+                <source srcset="images/hero-medium.webp" media="(min-width: 1000px)" type="image/webp">
                 <img src="images/hero-large.webp" alt="Hero image">
             </picture>
             <div class="herolabel">
@@ -72,10 +71,9 @@
             <h3>Events</h3>
         </section>
 
-
         <section class=" weather">
             <h2>Weather in Bogota Colombia</h2>
-            <div class="data-table">
+            <div class="weather-table">
                 <span class="data-title">Temperature (°F):</span>
                 <span class="data-value" id="current-temperature">45</span>
                 <span class="data-title">Conditions:</span>
@@ -86,13 +84,9 @@
                 <span class="data-value" id="wind-chill-value"></span>
             </div>
         </section>
-
-
         <section class="spotlights">
             <h3>Spotlights</h3>
         </section>
-
-
     </main>
 
     <footer>

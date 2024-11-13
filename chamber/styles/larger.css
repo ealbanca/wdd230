@@ -1,5 +1,5 @@
 /* Media Query for Larger Viewer */
-@media (820px <=width) {
+@media (min-width: 48em) {
 
 
     .logo {
@@ -11,12 +11,12 @@
         justify-content: space-around;
         background-color: #072453;
         color: white;
-
+        padding: 15px;
     }
 
     main {
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
         gap: 20px
     }
 
@@ -27,15 +27,8 @@
         margin-right: 30px;
     }
 
-    h4 {
-        font-family: "Poppins", sans-serif;
-    }
-
     .navigation {
         display: block;
-        max-width: 100%;
-
-
     }
 
 
@@ -46,7 +39,7 @@
     .hero {
         margin-top: 10px;
         position: relative;
-        grid-column: 1/43;
+        grid-column: 1/4;
     }
 
     .hero img {
@@ -75,10 +68,9 @@
         font-family: "Poppins", sans-serif;
     }
 
-
-
-
-    iframe {
-        grid-column: span 2;
+    footer {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
     }
+
 }
