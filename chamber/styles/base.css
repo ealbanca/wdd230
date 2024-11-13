@@ -3,6 +3,11 @@ h4 {
     font-size: 1rem;
 }
 
+h1 {
+    font-family: "Poppins", sans-serif;
+    font-size: 2rem;
+}
+
 body {
     display: grid;
     grid-template-rows: auto auto 1fr auto;
