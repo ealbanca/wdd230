@@ -1,6 +1,15 @@
 /* Media Query for Larger Viewer */
 @media (min-width: 48em) {
 
+    h1 {
+        font-family: "Poppins", sans-serif;
+        font-size: 2rem;
+    }
+
+    h4 {
+        font-family: "Poppins", sans-serif;
+        font-size: 1rem;
+    }
 
     .logo {
         margin-left: 10rem;
@@ -51,8 +60,8 @@
 
     .herolabel {
         position: absolute;
-        top: 370px;
-        left: 60px;
+        top: 20rem;
+        left: 3rem;
         background: radial-gradient(#fff, white);
         padding: 1rem;
         box-shadow: 4rem 4rem 4rem #2c2c2c;
