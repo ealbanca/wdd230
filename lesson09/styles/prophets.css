@@ -1,0 +1,55 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    gap: 2rem;
+    width: clamp(350px, 90%, 1440px);
+    background: #b8b8b8;
+    font-family: sans-serif;
+    margin-top: 3rem;
+    margin-inline: auto;
+}
+
+
+#cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    align-items: center;
+    gap: 1rem;
+}
+
+section {
+    border-style: groove;
+    border-color: rgb(71, 71, 182);
+    border-width: 2px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    padding-top: 0.5rem;
+    background-color: rgb(189, 183, 241);
+
+
+}
+
+h1 {
+    text-align: center;
+    color: rgb(71, 71, 182);
+}
+
+h2 {
+    color: rgb(71, 71, 182);
+    text-align: center;
+    padding-bottom: 1rem;
+}
+
+h3 {
+    color: rgb(0, 0, 0);
+    text-align: center;
+}
