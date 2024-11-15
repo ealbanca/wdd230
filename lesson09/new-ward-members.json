@@ -1,0 +1,45 @@
+{
+    "wardInformation": {
+        "familyName": "Smith",
+        "moveInDate": "2022-03-15",
+        "numberOfPeople": 7,
+        "visitedByBishopric": true,
+        "familyMembers": [
+            {
+                "name": "Edwin Albancando",
+                "gender": "Male",
+                "birthdate": "1999-05-20"
+            },
+            {
+                "name": "Annie Gordon",
+                "gender": "Female",
+                "birthdate": "2000-11-12"
+            },
+            {
+                "name": "David Albancando",
+                "gender": "Male",
+                "birthdate": "2002-02-03"
+            },
+            {
+                "name": "Karol Robles",
+                "gender": "Female",
+                "birthdate": "-08-27"
+            },
+            {
+                "name": "Tom Barber",
+                "gender": "Male",
+                "birthdate": "2015-04-10"
+            },
+            {
+                "name": "Hyla Maine",
+                "gender": "Female",
+                "birthdate": "2018-09-18"
+            },
+            {
+                "name": "Bryan Rocks",
+                "gender": "Male",
+                "birthdate": "2020-12-05"
+            }
+        ]
+    }
+}
