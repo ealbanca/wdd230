@@ -10,27 +10,19 @@ body.dark-mode {
 
 }
 
-body.dark-mode nav,
-body.dark-mode footer {
+body.dark-mode footer,
+body.dark-mode ul,
+body.dark-mode ul a {
     background-color: #8a8a8a;
     color: #000000;
     font-weight: 700;
 }
 
-body.dark-mode nav a {
-    background-color: #8a8a8a;
-}
+
 
 body.dark-mode #menu.open::before,
 body.dark-mode #menu::before {
     color: white;
-    font-weight: 700;
-}
-
-
-
-body.dark-mode a {
-    color: #000000;
     font-weight: 700;
 }
 
