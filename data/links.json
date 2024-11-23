@@ -82,8 +82,8 @@
             "lesson": "07",
             "links": [
                 {
-                    "url": "lesson07",
-                    "title": "Learning Activity 7"
+                    "url": "lesson07/lazyload.html",
+                    "title": "Lazy Loading"
                 }
             ]
         },
