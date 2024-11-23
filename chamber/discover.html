@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Edwin Hared Albancando Robles">
+    <meta name="description"
+        content="This is the Bogota's chamber of commerce home site, wehre people can find events and important information about the local chamber">
+    <meta property="og:title" content="Bogota Chamber of Commerce project for WWD 230">
+    <meta property="og:type" content="website">
+    <meta property="og:image"
+        content="https://encrypted-tbn2.gstatic.com/licensed-image?q=tbn:ANd9GcQ8s-ilVN_LDDMvsIHRZr30GF7mh09AAllzXrciSrgpmk52x7EOmA_gx9rhpgnazqPa0MGF2LlL0iKthgOWhaLpBUoG6fMrmIHQJ2t5Ah8">
+    <meta property="og:url" content="https://ealbanca.github.io/wdd230/chamber">
+
+    <title>Bogota Chamber of Commerce</title>
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="icon" href="images/favicon.ico">
+
+</head>
+
+<body>
+    <header>
+        <a id="logo_link" href="index.html">
+            <img class="logo" src="images/logo.webp" alt="Logo Bogota chamber of commerce">
+        </a>
+        <button id="menu"></button>
+        <!-- Rounded switch -->
+
+        <label class="switch">
+            <input type="checkbox" onclick="myFunction()">
+            <span class="slider round"></span>
+        </label>
+
+    </header>
+    <nav class="navigation">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="discover.html">Discover</a></li>
+            <li><a href="#">Directory</a></li>
+            <li><a href="#">Join</a></li>
+        </ul>
+    </nav>
+    <main class="discover-main">
+        <aside class="discover-sidebar">
+            <section>
+                <h2>Welcome</h2>
+                <p id="visitMessage"></p>
+            </section>
+
+            <section class="weather-info">
+                <h2>Weather in Duque de Caxias</h2>
+                <div class="data-table">
+                    <span class="data-title">Temperature (°F):</span>
+                    <span class="data-value" id="current-temperature">93</span>
+                    <span class="data-title">Conditions:</span>
+                    <span class="data-value">Sunny</span>
+                    <span class="data-title">Wind (mph):</span>
+                    <span class="data-value" id="wind-speed">3</span>
+                    <span class="data-title">Wind Chill (°F):</span>
+                    <span class="data-value" id="wind-chill-value"></span>
+                </div>
+            </section>
+            <section id="weather-info">
+                <h2>Learn more about this marvelous ciity</h2>
+                <iframe width="420" height="315" src="https://www.youtube.com/watch?v=rqirv5lSmYE&t=60s">
+                </iframe>
+            </section>
+        </aside>
+        <section class="discover-main-content">
+            <h2>Discover Bogota, Colombia</h2>
+            <div class="gallery">
+                <figure>
+                    <picture>
+                        <source srcset="images/jaimeduquepark-small.webp" media="(max-width: 400px)">
+                        <source srcset="images/jaimeduquepark-medium.webp" media="(max-width: 800px)">
+                        <source srcset="images/jaimeduquepark-large.webp" media="(max-width: 1200px)">
+                        <img src="images/jaimeduquepark-large.webp" alt="Jaime Duque Park" width="1200" height="800"
+                            loading="lazy">
+                    </picture>
+                    <figcaption>Historical Places. The Nossa Senhora do Pilar Mother Church was built in 1720.
+                    </figcaption>
+                </figure>
+                <figure>
+                    <picture>
+                        <source srcset="images/monserrate-small.webp" media="(max-width: 400px)">
+                        <source srcset="images/monserrate-medium.webp" media="(max-width: 800px)">
+                        <source srcset="images/monserrate-large.webp" media="(max-width: 1200px)">
+                        <img src="images/monserrate-large.webp" alt="Monserrate Peak" width="1200" height="800"
+                            loading="lazy">
+                    </picture>
+                    <figcaption>Brazilian Culture. Founded in 1985, the Afro Cultural Group Ojuobá Axé's mission is to
+                        promote Afro-Brazilian culture and is based in Centenário, one of the main communities in the
+                        municipality of Duque de Caxias. </figcaption>
+                </figure>
+                <figure>
+                    <picture>
+                        <source srcset="images/botanicgarden-small.webp" media="(max-width: 400px)">
+                        <source srcset="images/botanicgarden-medium.webp" media="(max-width: 800px)">
+                        <source srcset="images/botanicgarden-large.webp" media="(max-width: 1200px)">
+                        <img src="images/botanicgarden-large.webp" alt="Botanic Garden" width="1200" height="800"
+                            loading="lazy">
+                    </picture>
+                    <figcaption>Museums. The Science and Life Museum is located in the heart of the city of Duque de
+                        Caxias and has the mission of popularizing and spreading culture, science and art. The space
+                        houses various temporary exhibitions, a planetarium, auditoriums and rooms for workshops, such
+                        as robotics workshops, workshops for teachers, a film club, lectures, seminars, among others.
+                    </figcaption>
+                </figure>
+                <figure>
+                    <picture>
+                        <source srcset="images/virgilio-small.webp" media="(max-width: 400px)">
+                        <source srcset="images/virgilio-medium.webp" media="(max-width: 800px)">
+                        <source srcset="images/virgilio-large.webp" media="(max-width: 1200px)">
+                        <img src="images/virgilio-large.webp" alt="Virgilio Barco Library" width="1200" height="800"
+                            loading="lazy">
+                    </picture>
+                    <figcaption>Archaeological sites. The Sambaqui do São Bento Archaeological Site is made up of hills
+                        of mollusc shells, crustacean carapaces, fish bones, birds and small mammals, which indicate how
+                        the first inhabitants, known as the “Sambaquis People”, of Duque de Caxias lived.</figcaption>
+                </figure>
+                <figure>
+                    <picture>
+                        <source srcset="images/goldmuseum-small.webp" media="(max-width: 400px)">
+                        <source srcset="images/goldmuseum-medium.webp" media="(max-width: 800px)">
+                        <source srcset="images/goldmuseum-large.webp" media="(max-width: 1200px)">
+                        <img src="images/goldmuseum-large.webp" alt="Gold Museum in Bogota" width="1200" height="800"
+                            loading="lazy">
+                    </picture>
+                    <figcaption>Duque de Caxias Arts and Crafts Fair. The Artisan Fair has handcrafted products that
+                        will delight you and everyone you give a gift to.</figcaption>
+                </figure>
+                <figure>
+                    <picture>
+                        <source srcset="images/bolivar-small.webp" media="(max-width: 400px)">
+                        <source srcset="images/bolivar-medium.webp" media="(max-width: 800px)">
+                        <source srcset="images/bolivar-large.webp" media="(max-width: 1200px)">
+                        <img src="images/bolivar-large.webp" alt="Simon Bolivar main square" width="1200" height="800"
+                            loading="lazy">
+                    </picture>
+                    <figcaption>Outstanding experiences. A captive balloon flight takes place at the Aeroclube de Xerém.
+                    </figcaption>
+                </figure>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div id="currentYear"></div>
+        <div id="lastModified"></div>
+        <div>Contact<br><br> Calle 151 # 115-22<br> Bogota, Colombia<br>(385) 482-7531</div>
+    </footer>
+
+    <script src="scripts/getdates.js"></script>
+    <script src="scripts/hamburger.js"></script>
+    <script src="scripts/darkmode.js"></script>
+    <script src="scripts/windchill.js"></script>
+    <script src="scripts/localStorage.js"></script>
+
+
+</body>
+
+
+
+</html>
