@@ -291,6 +291,11 @@ body.dark-mode .discover-sidebar section {
     color: #4b4949;
 }
 
+.discover-main-content h2 {
+    color: black;
+    text-align: center;
+}
+
 body.dark-mode .discover-main-content h2 {
     color: white;
     text-align: center;
