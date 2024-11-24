@@ -1,5 +1,5 @@
 const baseURL = "https://ealbanca.github.io/wdd230/";
-const linksURL = "https://ealbanca.github.io/wdd230/data/links.json";
+const linksURL = "https://ealbanca.github.io/wdd230/chamber/data/infocard.json";
 
 async function getLinks() {
     const response = await fetch(linksURL);
@@ -7,27 +7,27 @@ async function getLinks() {
     displayLinks(data);
 }
 
-const displayLinks = (weeks) => {
-    const assignmentList = document.querySelector('.card ul');
-    weeks.lessons.forEach((lesson) => {
+const displayLinks = (information) => {
+    const infoList = document.querySelector('.infocard ul');
+    information.list.forEach((info) => {
 
-        let weekAssignment = document.createElement('li');
-        weekAssignment.textContent = `${lesson.lesson}: `;
+        let informationContent = document.createElement('li');
+        informationContent.textContent = `${info.info}: `;
 
-        lesson.links.forEach((link, index) => {
+        info.links.forEach((link, index) => {
             let anchor = document.createElement('a');
             anchor.href = link.url;
             anchor.textContent = link.title;
             anchor.target = "_blank";
 
-            weekAssignment.appendChild(anchor);
-
-            if (index < lesson.links.length - 1) {
-                weekAssignment.appendChild(document.createTextNode(" | "));
+            informationContent.appendChild(anchor);
+            if (index < info.links.length - 1) {
+                informationContent.appendChild(document.createTextNode(" | "));
             }
+
         });
 
-        assignmentList.appendChild(weekAssignment);
+        infoList.appendChild(informationContent);
     });
 }
 
