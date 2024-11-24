@@ -95,8 +95,8 @@
             "lesson": "08",
             "links": [
                 {
-                    "url": "lesson08",
-                    "title": "Learning Activity 8"
+                    "url": "lesson08/tablebuild.html",
+                    "title": "HTML responsive table"
                 }
             ]
         },
