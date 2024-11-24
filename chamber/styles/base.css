@@ -11,8 +11,8 @@ body.dark-mode {
 }
 
 body.dark-mode footer,
-body.dark-mode ul,
-body.dark-mode ul a {
+body.dark-mode .navigation ul,
+body.dark-mode .navigation ul a {
     background-color: #8a8a8a;
     color: #000000;
     font-weight: 700;
@@ -276,6 +276,28 @@ footer {
 
 .discover-sidebar section {
     margin-bottom: 20px;
+    background-color: white;
+    border-style: groove;
+    border-width: 0.5px;
+    border-radius: 5px;
+    border-color: black;
+    margin-left: 10px;
+    display: block;
+    padding: 25px;
+}
+
+body.dark-mode .discover-sidebar section {
+    border-color: #8a8a8a;
+    color: #4b4949;
+}
+
+body.dark-mode .discover-main-content h2 {
+    color: white;
+    text-align: center;
+}
+
+body.dark-mode figcaption {
+    color: white;
 }
 
 .gallery {
@@ -294,6 +316,7 @@ footer {
     height: auto;
     display: block;
     transition: transform 0.3s ease;
+    border-radius: 5px;
 }
 
 .gallery figcaption {
