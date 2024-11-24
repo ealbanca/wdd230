@@ -1,4 +1,4 @@
-const baseURL = "https://ealbanca.github.io/wdd230/";
+const baseURL = "https://ealbanca.github.io/wdd230/chamber";
 const linksURL = "https://ealbanca.github.io/wdd230/chamber/data/infocard.json";
 
 async function getLinks() {
