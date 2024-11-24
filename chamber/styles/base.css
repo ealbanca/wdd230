@@ -276,13 +276,7 @@ footer {
 /* Discovery Page */
 
 .discover-main {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
     gap: 10px;
-    max-width: 1280px;
-    margin: 0 auto;
-    margin-top: 1px;
     padding: 2rem;
 }
 
