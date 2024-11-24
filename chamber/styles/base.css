@@ -276,12 +276,14 @@ footer {
 /* Discovery Page */
 
 .discover-main {
-    margin: 0px;
-    padding: 20px;
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 20px;
-    font-family: "Poppins", sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    max-width: 1280px;
+    margin: 0 auto;
+    margin-top: 1px;
+    padding: 2rem;
 }
 
 .discover-sidebar section {
@@ -294,6 +296,11 @@ footer {
     margin-left: 10px;
     display: block;
     padding: 25px;
+}
+
+.video-content {
+    justify-content: center;
+    text-align: center;
 }
 
 body.dark-mode .discover-sidebar section {
