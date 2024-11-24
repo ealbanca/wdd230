@@ -204,6 +204,10 @@ h4 {
     font-size: 1rem;
 }
 
+h2 {
+    font-family: "Poppins", sans-serif;
+}
+
 .herolabel {
     position: absolute;
     top: 9rem;
@@ -272,6 +276,7 @@ footer {
     display: grid;
     grid-template-columns: 1fr;
     gap: 20px;
+    font-family: "Poppins", sans-serif;
 }
 
 .discover-sidebar section {
@@ -291,12 +296,12 @@ body.dark-mode .discover-sidebar section {
     color: #4b4949;
 }
 
-.discover-main-content h2 {
+.discover-main-content h1 {
     color: black;
     text-align: center;
 }
 
-body.dark-mode .discover-main-content h2 {
+body.dark-mode .discover-main-content h1 {
     color: white;
     text-align: center;
 }
@@ -328,5 +333,5 @@ body.dark-mode figcaption {
 .gallery figcaption {
     text-align: center;
     margin-top: 10px;
-    font-size: 20px;
+    font-size: 18px;
 }
