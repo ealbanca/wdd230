@@ -1,5 +1,5 @@
 /* Media Query for Larger Viewer */
-@media (min-width: 48em) {
+@media (580px <=width <=839px) {
 
     h1 {
         font-family: "Poppins", sans-serif;
