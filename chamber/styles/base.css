@@ -215,8 +215,8 @@ h2 {
 
 .herolabel {
     position: absolute;
-    top: 9rem;
-    left: 1rem;
+    top: 7rem;
+    left: 0.1rem;
     background: radial-gradient(#fff, white);
     padding: 0.70rem;
     box-shadow: 2rem 2rem 2rem #2c2c2c;
@@ -226,9 +226,9 @@ h2 {
 
 .herolabel p {
     margin: 0;
-    padding: .15rem;
-    font-weight: 600;
-    font-size: 1rem;
+    padding: .10rem;
+    font-weight: 500;
+    font-size: 0.90rem;
     font-family: "Poppins", sans-serif;
 }
 
