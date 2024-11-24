@@ -301,6 +301,7 @@ body.dark-mode .discover-main-content h2 {
     text-align: center;
 }
 
+
 body.dark-mode figcaption {
     color: white;
 }
@@ -308,7 +309,7 @@ body.dark-mode figcaption {
 .gallery {
     display: grid;
     grid-template-columns: 1fr;
-    gap: 20px;
+    gap: 25px;
 }
 
 .gallery figure {
@@ -327,4 +328,5 @@ body.dark-mode figcaption {
 .gallery figcaption {
     text-align: center;
     margin-top: 10px;
+    font-size: 20px;
 }
