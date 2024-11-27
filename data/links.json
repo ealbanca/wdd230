@@ -97,6 +97,10 @@
                 {
                     "url": "lesson08/tablebuild.html",
                     "title": "HTML responsive table"
+                },
+                {
+                    "url": "lesson08/index.html",
+                    "title": "HTML Form"
                 }
             ]
         },
