@@ -55,6 +55,15 @@ form h1 {
     appearance: none;
 }
 
+.wf1 input:required {
+    border-right: solid 8px red;
+}
+
+.wf1 input:required:valid {
+    border-right: solid 8px var(--accent2-color);
+}
+
+
 .wf1 input[type="submit"] {
     border: none;
     background-color: var(--accent1-color);

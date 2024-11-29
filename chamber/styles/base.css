@@ -396,6 +396,14 @@ form h1 {
     max-width: 400px;
 }
 
+.wf1 input:required {
+    border-right: solid 8px red;
+}
+
+.wf1 input:required:valid {
+    border-right: solid 8px #0d4399;
+}
+
 .wf1 input[type="submit"] {
     border: none;
     background-image: linear-gradient(#0d4399, #072453);
