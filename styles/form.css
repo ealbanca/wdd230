@@ -2,7 +2,7 @@
     --paragraph-font: "Poppins", sans-serif;
     --text-color: #000;
     --accent1-color: #0C6291;
-    --accent2-color: 12a0ec;
+    --accent2-color: #12a0ec;
     --accent3-color: #d3d3d3;
 }
 
@@ -14,7 +14,7 @@
 
 .wf1 fieldset {
     margin: 2ch 0;
-    border: 1px solid --accent3-color;
+    border: 1px solid var(--accent3-color);
     border-radius: 6px;
     padding: 1rem 2%;
     font-size: 2rem;
