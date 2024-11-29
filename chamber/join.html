@@ -54,36 +54,71 @@
             <li><a href="join.html">Join</a></li>
         </ul>
     </nav>
+    <main class="discover-main">
+        <aside class="discover-sidebar">
 
-    <form method="get" action="thankyou.html" class="wf1">
-        <h1>Join the Chamber</h1>
-        <fieldset>
-            <div id="form-message"></div>
-            <label> First Name* <input type="text" id="fname" name="fname" required autofocus></label>
-            <label> Last Name* <input type="text" id="lname" name="lname" required></label>
-            <label> Title / Position* <input type="text" id="title" name="title" pattern="^[A-Za-z0-9-\s]{7,}$"
-                    title="Only letters, numbers, hyphens, and spaces allowed. Min 7 characters." required></label>
-            <label> Email address* <input type="email" id="email" name="email" placeholder="example@gmail.com"
-                    required></label>
-            <label> Mobile phone number* <input type="tel" id="phone" name="phone" required></label>
-            <label> Business / Organization's name* <input type="text" id="business" name="business" required>
-                <label>Membership level
-                    <select name="Membership">
-                        <option value="">Please Select</option>
-                        <option value="np"> NP Membership</option>
-                        <option value="bronze"> Bronze Membership</option>
-                        <option value="silver"> Silver Membership</option>
-                        <option value="gold"> Gold Membership</option>
-                    </select>
-                </label>
-                <label>Business / Organization's description<textarea name="org-description" id="org-description"
-                        rows="6"></textarea></label>
+            <section>
+                <h2>Welcome</h2>
+                <p id="visitMessage"></p>
+            </section>
+            <section class="infocard">
+                <h3>Information card</h3>
+                <ul>
+                    <!--Here are the links-->
+                </ul>
+            </section>
 
-                <input type="hidden" name="timestamp" id="timestamp">
-                <input type="submit" value="Join the Chamber">
+            <section class="video-content">
+                <h2>Learn more about this marvelous city</h2>
+                <iframe width="290" height="185"
+                    src="https://www.youtube.com/embed/FgcLklxcqPo?si=GuDJgxUbrPXgmtyD"></iframe>
+            </section>
 
-        </fieldset>
-    </form>
+            <section class="weather">
+                <h2>Weather in Bogota</h2>
+                <div class="weather-table">
+                    <span class="data-title">Temperature (°F):</span>
+                    <span class="data-value" id="current-temperature">45</span>
+                    <span class="data-title">Conditions:</span>
+                    <span class="data-value">Sunny</span>
+                    <span class="data-title">Wind (mph):</span>
+                    <span class="data-value" id="wind-speed">4</span>
+                    <span class="data-title">Wind Chill (°F):</span>
+                    <span class="data-value" id="wind-chill-value"></span>
+                </div>
+            </section>
+
+        </aside>
+        <form method="get" action="thankyou.html" class="wf1">
+            <h1>Join the Chamber</h1>
+            <fieldset>
+                <div id="form-message"></div>
+                <label> First Name* <input type="text" id="fname" name="fname" required autofocus></label>
+                <label> Last Name* <input type="text" id="lname" name="lname" required></label>
+                <label> Title / Position* <input type="text" id="title" name="title" pattern="^[A-Za-z0-9-\s]{7,}$"
+                        title="Only letters, numbers, hyphens, and spaces allowed. Min 7 characters." required></label>
+                <label> Email address* <input type="email" id="email" name="email" placeholder="example@gmail.com"
+                        required></label>
+                <label> Mobile phone number* <input type="tel" id="phone" name="phone" required></label>
+                <label> Business / Organization's name* <input type="text" id="business" name="business" required>
+                    <label>Membership level
+                        <select name="Membership">
+                            <option value="">Please Select</option>
+                            <option value="np"> NP Membership</option>
+                            <option value="bronze"> Bronze Membership</option>
+                            <option value="silver"> Silver Membership</option>
+                            <option value="gold"> Gold Membership</option>
+                        </select>
+                    </label>
+                    <label>Business / Organization's description<textarea name="org-description" id="org-description"
+                            rows="6"></textarea></label>
+
+                    <input type="hidden" name="timestamp" id="timestamp">
+                    <input type="submit" value="Join the Chamber">
+
+            </fieldset>
+        </form>
+    </main>
 
 
 

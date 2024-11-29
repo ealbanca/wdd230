@@ -293,11 +293,19 @@ footer {
     margin-left: 10px;
     display: block;
     padding: 25px;
+    font-family: "Poppins", sans-serif;
 }
 
 .video-content {
     justify-content: center;
     text-align: center;
+}
+
+.video-content h2,
+.weather h2,
+.infocard h2,
+h2 {
+    padding-bottom: 1rem;
 }
 
 body.dark-mode .discover-sidebar section {
@@ -360,6 +368,7 @@ form h1 {
     padding: 1rem 2%;
     font-size: 2rem;
     color: black;
+    margin-left: 1rem;
 }
 
 .wf1 label {
