@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Google tag (gtag.js) -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edwin Hared Albancando Robles - WDD 230 - Web Frontend Development</title>
+    <meta name="description"
+        content="This is my course assignment portal. It will have the links to activities and assignments made by Edwin Hared Albancando Robles during the course WDD 230 - Web Frontend Development.">
+    <meta name="author" content="Edwin Hared Albancando Robles">
+    <link rel="icon" href="favicon.ico">
+    <meta property="og:title" content="Home Page  Web Frontend Development">
+    <meta property="og:type" content="website">
+    <meta property="og:image"
+        content="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxeDXOJ0tsrbzssid7K2bqZ0Gkag5ysfkeeA&s">
+    <meta property="og:url" content="https://ealbanca.github.io/wdd230">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/form.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ruda:wght@400..900&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+    <header>
+        <img class="prof-picture" src="images/profile-picture.webp" alt="Hared">
+        <h1>Hared Albancando Robles</h1>
+        <button id="menu"></button>
+    </header>
+    <nav class="navigation">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="lesson03/chamber-site-plan.html">Site Plan</a></li>
+            <li><a href="chamber/" target="_blank">Chamber</a></li>
+            <li><a href="https://www.byui.edu/" target="_blank">BYU-Idaho</a></li>
+            <li><a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/hel/5?lang=eng&id=p12#p12"
+                    target="_blank">Scripture</a></li>
+        </ul>
+    </nav>
+
+
+    <main>
+        <form method="get" action="record.html" class="wf1">
+            <fieldset>
+                <div id="form-message"></div>
+                <legend>Student Registration</legend>
+                <label> Username* <input type="text" id="username" name="username" required autofocus></label>
+                <label> Password* <input type="password" id="password" name="password"
+                        placeholder="At least eight characters long. Only alpha-numeric" minlength="8"
+                        pattern="[A-Za-z0-9]{8,}" required></label>
+                <label> Confirm Password* <input type="password" id="password2" name="password2" minlength="8"
+                        pattern="[A-Za-z0-9]{8,}" title="Must match the password above" placeholder="Re-enter password"
+                        required></label>
+                <label> Email* <input type="email" id="email" name="email" pattern="[a-zA-Z0-9_.\-]+@byui.edu"
+                        title="A valid byui.edu email address" placeholder="Your BYU-I email address" required></label>
+                <div class="rating">
+                    <label for="page-rating">Rate this page (1-10):</label>
+                    <input type="range" id="page-rating" name="page-rating" min="1" max="10" step="1" value="5">
+                    <p>Rating: <span id="rating-value"></span></p>
+                </div>
+            </fieldset>
+
+            <input type="submit" value="Submit Registration">
+        </form>
+
+    </main>
+
+
+    <footer>
+        <p id="currentYear"></p>
+        <p id="lastModified"></p>
+
+    </footer>
+
+    <script src="scripts/getdates.js"></script>
+    <script src="scripts/hamburger.js"></script>
+    <script src="scripts/passwordValidation.js" defer></script>
+    <script src="scripts/rating.js" defer></script>
+
+</body>
+
+</html>
