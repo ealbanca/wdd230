@@ -12,6 +12,12 @@
     box-sizing: border-box;
 }
 
+form h1 {
+    color: #000;
+    font-style: var(--paragraph-font);
+    margin-left: 1rem;
+}
+
 .wf1 fieldset {
     margin: 2ch 0;
     border: 1px solid var(--accent3-color);
