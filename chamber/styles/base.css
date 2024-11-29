@@ -74,6 +74,7 @@ nav a {
     padding: 5px;
     color: white;
     background-color: #072453;
+    font-family: "Poppins", sans-serif;
 }
 
 nav a:hover {
@@ -83,6 +84,7 @@ nav a:hover {
 
 section ul {
     list-style-type: none;
+    font-family: "Poppins", sans-serif;
 }
 
 #menu::before {
@@ -109,6 +111,7 @@ section ul {
     right: 1rem;
     top: 4rem;
     cursor: pointer;
+    font-family: "Poppins", sans-serif;
 }
 
 .switch {
@@ -340,4 +343,92 @@ body.dark-mode figcaption {
     text-align: center;
     margin-top: 10px;
     font-size: 18px;
+}
+
+
+/* Join Page */
+
+form h1 {
+    text-align: center;
+}
+
+
+.wf1 fieldset {
+    margin: 2ch 0;
+    border: 2px solid #072453;
+    border-radius: 6px;
+    padding: 1rem 2%;
+    font-size: 2rem;
+    color: black;
+}
+
+.wf1 label {
+    display: block;
+    padding-top: 1rem;
+    color: black;
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+
+.wf1 input[type="text"],
+.wf1 input[type="email"],
+.wf1 input[type="tel"],
+.wf1 textarea {
+    background-color: #eee;
+    display: block;
+    border: solid 1px #999;
+    border-radius: 6px;
+    padding: .75rem;
+    color: #555;
+    width: 100%;
+    max-width: 400px;
+    appearance: none;
+}
+
+.wf1 select {
+    background-color: #eee;
+    display: block;
+    border: solid 1px #999;
+    border-radius: 6px;
+    padding: .75rem;
+    color: #555;
+    width: 100%;
+    max-width: 400px;
+}
+
+.wf1 input[type="submit"] {
+    border: none;
+    background-image: linear-gradient(#0d4399, #072453);
+    color: #fff;
+    border-radius: 6px;
+    padding: .8rem;
+    width: 96%;
+    max-width: 400px;
+    margin-top: 2rem;
+    box-shadow: 1px 1px 4px #999;
+    font-weight: 400;
+    font-family: "Poppins", sans-serif;
+}
+
+body.dark-mode label {
+    color: #fff;
+}
+
+body.dark-mode fieldset {
+    border-color: white;
+}
+
+body.dark-mode .wf1 input[type="submit"] {
+    background-image: linear-gradient(#8a8a8a, #8a8a8a);
+    color: #000000;
+    font-weight: 500;
+}
+
+.confirmation-main-container {
+    text-align: center;
+    grid-template-columns: 1fr;
+}
+
+body.dark-mode .confirmation-main-container {
+    color: #fff;
 }

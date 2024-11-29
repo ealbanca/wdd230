@@ -101,4 +101,9 @@
     .gallery img:hover {
         transform: scale(1.05);
     }
+
+    .confirmation-main-container {
+        text-align: center;
+        grid-template-columns: 1fr;
+    }
 }

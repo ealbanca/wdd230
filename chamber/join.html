@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Edwin Hared Albancando Robles">
-    <meta name="description" content="This is the Bogota's chamber of commerce home site">
+    <meta name="description" content="This is the Bogota's chamber of commerce discover page">
     <meta property="og:title" content="Bogota Chamber of Commerce project for WWD 230">
     <meta property="og:type" content="website">
     <meta property="og:image"
@@ -54,40 +54,38 @@
             <li><a href="join.html">Join</a></li>
         </ul>
     </nav>
-    <main>
-        <div class="hero">
-            <picture>
-                <source srcset="images/hero-small.webp" media="(max-width:400px)" type="image/webp">
-                <source srcset="images/hero-medium.webp" media="(min-width: 401px)" type="image/webp">
-                <img src="images/hero-large.webp" alt="Hero image">
-            </picture>
-            <div class="herolabel">
-                <h1>Bogota Chamber of Commerce</h1>
-                <h4>Empowering Business, Enriching Community</h4>
-            </div>
-        </div>
 
-        <section class="events">
-            <h3>Events</h3>
-        </section>
+    <form method="get" action="thankyou.html" class="wf1">
+        <h1>Join the Chamber</h1>
+        <fieldset>
+            <div id="form-message"></div>
+            <label> First Name* <input type="text" id="fname" name="fname" required autofocus></label>
+            <label> Last Name* <input type="text" id="lname" name="lname" required></label>
+            <label> Title / Position* <input type="text" id="title" name="title" pattern="^[A-Za-z0-9-\s]{7,}$"
+                    title="Only letters, numbers, hyphens, and spaces allowed. Min 7 characters." required></label>
+            <label> Email address* <input type="email" id="email" name="email" placeholder="example@gmail.com"
+                    required></label>
+            <label> Mobile phone number* <input type="tel" id="phone" name="phone" required></label>
+            <label> Business / Organization's name* <input type="text" id="business" name="business" required>
+                <label>Membership level
+                    <select name="Membership">
+                        <option value="">Please Select</option>
+                        <option value="np"> NP Membership</option>
+                        <option value="bronze"> Bronze Membership</option>
+                        <option value="silver"> Silver Membership</option>
+                        <option value="gold"> Gold Membership</option>
+                    </select>
+                </label>
+                <label>Business / Organization's description<textarea name="org-description" id="org-description"
+                        rows="6"></textarea></label>
 
-        <section class=" weather">
-            <h2>Weather in Bogota Colombia</h2>
-            <div class="weather-table">
-                <span class="data-title">Temperature (°F):</span>
-                <span class="data-value" id="current-temperature">45</span>
-                <span class="data-title">Conditions:</span>
-                <span class="data-value">Sunny</span>
-                <span class="data-title">Wind (mph):</span>
-                <span class="data-value" id="wind-speed">4</span>
-                <span class="data-title">Wind Chill (°F):</span>
-                <span class="data-value" id="wind-chill-value"></span>
-            </div>
-        </section>
-        <section class="spotlights">
-            <h3>Spotlights</h3>
-        </section>
-    </main>
+                <input type="hidden" name="timestamp" id="timestamp">
+                <input type="submit" value="Join the Chamber">
+
+        </fieldset>
+    </form>
+
+
 
     <footer>
         <div id="currentYear"></div>
@@ -99,6 +97,8 @@
     <script src="scripts/hamburger.js"></script>
     <script src="scripts/darkmode.js"></script>
     <script src="scripts/windchill.js"></script>
+    <script src="scripts/localStorage.js"></script>
+    <script src="scripts/infocardlinks.js"></script>
 
 
 </body>
