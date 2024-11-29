@@ -79,6 +79,7 @@ h3 {
     width: 35px;
     height: 50px;
     color: white;
+    margin-left: 2rem;
 
     /* Hamburger icon */
 }
@@ -93,7 +94,6 @@ h3 {
     border: 0;
     background: none;
     color: #000;
-    position: fixed;
     right: 1rem;
     top: 1rem;
     cursor: pointer;
