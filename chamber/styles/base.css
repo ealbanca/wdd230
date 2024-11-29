@@ -356,6 +356,14 @@ body.dark-mode figcaption {
 
 /* Join Page */
 
+.card h3 {
+    margin-bottom: 1rem;
+}
+
+.card h4 {
+    font-weight: 500;
+}
+
 form h1 {
     text-align: center;
 }
@@ -427,7 +435,8 @@ form h1 {
     font-family: "Poppins", sans-serif;
 }
 
-body.dark-mode label {
+body.dark-mode label,
+body.dark-mode form h1 {
     color: #fff;
 }
 
