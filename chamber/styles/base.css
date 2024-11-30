@@ -8,7 +8,7 @@ body {
     background-color: white;
     font-size: 22px;
     margin: 0 auto;
-    max-width: 1280px;
+    max-width: 1900px;
 }
 
 body.dark-mode {
@@ -184,7 +184,7 @@ main {
     flex-direction: column;
     justify-content: center;
     gap: 10px;
-    max-width: 1280px;
+    max-width: 1900px;
     margin: 0 auto;
     margin-top: 1px;
     padding: 2rem;
