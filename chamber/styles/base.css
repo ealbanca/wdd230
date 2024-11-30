@@ -467,6 +467,17 @@ body.dark-mode .confirmation-main-container {
     grid-column: 1/4;
 }
 
+body.dark-mode #grid-view,
+body.dark-mode #list-view {
+    background-image: linear-gradient(#8a8a8a, #8a8a8a);
+}
+
+body.dark-mode .grid-view .member,
+body.dark-mode .list-view .member {
+    background-color: #d8d6d6;
+    color: black;
+}
+
 .view-toggle {
     margin-bottom: 20px;
     text-align: center;
