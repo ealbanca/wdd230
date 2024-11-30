@@ -46,7 +46,7 @@ header {
 }
 
 .logo {
-    height: 150px;
+    height: 130px;
     display: flex;
     justify-content: flex-start;
 }
@@ -467,9 +467,70 @@ body.dark-mode .confirmation-main-container {
     grid-column: 1/4;
 }
 
+.view-toggle {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
 .grid-view {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
     grid-gap: 05px;
     align-items: center;
+    font-family: "Poppins", sans-serif;
+    font-size: 0.9rem;
+}
+
+#grid-view,
+#list-view {
+    margin-bottom: 1rem;
+    border: none;
+    background-image: linear-gradient(#0d4399, #072453);
+    color: #fff;
+    border-radius: 6px;
+    padding: .8rem;
+    width: 96%;
+    max-width: 140px;
+    margin-top: 2rem;
+    box-shadow: 1px 1px 4px #999;
+    font-weight: 300;
+    font-size: medium;
+    font-family: "Poppins", sans-serif;
+
+}
+
+.member {
+    border: 1px solid #ddd;
+    padding: 1rem;
+    border-radius: 8px;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+#members.list-view {
+    display: block;
+    font-family: "Poppins", sans-serif;
+    font-size: 0.9rem;
+}
+
+#members.list-view .member {
+    flex-direction: row;
+    text-align: left;
+    border-radius: 0px;
+}
+
+#members.list-view .member img {
+    display: none;
+}
+
+
+#members,
+#business-spotlight {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1rem;
+    border-radius: 6px;
 }
