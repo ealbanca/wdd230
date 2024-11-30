@@ -47,7 +47,6 @@
     }
 
     .hero {
-        margin-top: 10px;
         position: relative;
         grid-column: 1/4;
     }
