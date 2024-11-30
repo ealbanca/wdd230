@@ -37,6 +37,15 @@ body.dark-mode nav a:hover {
     color: white;
 }
 
+body.dark-mode .weather-info,
+body.dark-mode .events,
+body.dark-mode #weather-caption,
+body.dark-mode .weather-figure figcaption,
+body.dark-mode .spotlights {
+    background-color: #d8d6d6;
+    color: #000000;
+}
+
 header {
     width: 100%;
     position: relative;
@@ -235,28 +244,22 @@ h2 {
 }
 
 
-.weather {
-
+.weather-info,
+.events,
+.spotlights {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
     background-color: white;
     border-style: groove;
-    border-width: 0.5px;
-    border-radius: 5px;
-    border-color: black;
+    border-width: 1.5px;
+    border-radius: 6px;
+    border-color: #072453;
     text-align: center;
     padding: 1rem;
     margin-bottom: 1rem;
-
-}
-
-.weather-table {
-    display: grid;
-    grid-template-columns: auto auto;
-    column-gap: 1.75rem;
-    row-gap: 0.5rem;
+    font-family: "Poppins", sans-serif;
 }
 
 
@@ -288,9 +291,9 @@ footer {
     margin-bottom: 20px;
     background-color: white;
     border-style: groove;
-    border-width: 0.5px;
-    border-radius: 5px;
-    border-color: black;
+    border-width: 1.5px;
+    border-radius: 6px;
+    border-color: #072453;
     margin-left: 10px;
     display: block;
     padding: 25px;
@@ -304,11 +307,11 @@ footer {
 }
 
 .video-content h2,
-.weather h2,
 .infocard h2,
 h2 {
     padding-bottom: 1rem;
     font-size: 1.5rem;
+    text-align: center;
 }
 
 body.dark-mode .discover-sidebar section {

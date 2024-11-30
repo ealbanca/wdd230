@@ -69,22 +69,19 @@
             </section>
 
             <section class="video-content">
-                <h2>Learn more about this marvelous city</h2>
+                <h2>Learn more about Bogota</h2>
                 <iframe width="290" height="185"
                     src="https://www.youtube.com/embed/FgcLklxcqPo?si=GuDJgxUbrPXgmtyD"></iframe>
             </section>
 
-            <section class="weather">
-                <h2>Weather in Bogota</h2>
-                <div class="weather-table">
-                    <span class="data-title">Temperature (°F):</span>
-                    <span class="data-value" id="current-temperature">45</span>
-                    <span class="data-title">Conditions:</span>
-                    <span class="data-value">Sunny</span>
-                    <span class="data-title">Wind (mph):</span>
-                    <span class="data-value" id="wind-speed">4</span>
-                    <span class="data-title">Wind Chill (°F):</span>
-                    <span class="data-value" id="wind-chill-value"></span>
+            <section class="weather-info">
+                <h2>Weather in Bogota Colombia</h2>
+                <figure class="weather-figure">
+                    <img id="weather-icon" src="images/default-icon.png" alt="Weather icon">
+                    <figcaption id="weather-caption"></figcaption>
+                </figure>
+                <div id="forecast">
+                    <!-- Forecast populated here -->
                 </div>
             </section>
 
@@ -190,6 +187,7 @@
     <script src="scripts/windchill.js"></script>
     <script src="scripts/localStorage.js"></script>
     <script src="scripts/infocardlinks.js"></script>
+    <script src="scripts/weather.js"></script>
 
 
 </body>
