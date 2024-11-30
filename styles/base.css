@@ -182,8 +182,24 @@ section ul {
     margin-left: 10px;
     display: block;
     padding: 20px;
+}
 
+.card {
 
+    background-color: white;
+    border-style: groove;
+    border-width: 0.5px;
+    border-radius: 5px;
+    border-color: black;
+    margin-left: 10px;
+    display: block;
+    padding: 20px;
+}
+
+.weather-content {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 }
 
 .card a:active,
