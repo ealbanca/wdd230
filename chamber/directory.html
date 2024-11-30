@@ -55,38 +55,15 @@
         </ul>
     </nav>
     <main>
-        <div class="hero">
-            <picture>
-                <source srcset="images/hero-small.webp" media="(max-width:400px)" type="image/webp">
-                <source srcset="images/hero-medium.webp" media="(min-width: 401px)" type="image/webp">
-                <img src="images/hero-large.webp" alt="Hero image">
-            </picture>
-            <div class="herolabel">
-                <h1>Bogota Chamber of Commerce</h1>
-                <h4>Empowering Business, Enriching Community</h4>
-            </div>
-        </div>
 
-        <section class="events">
-            <h3>Events</h3>
+        <section id="directory">
+            <div class="view-toggle">
+                <button id="grid-view">⬜ Grid View</button>
+                <button id="list-view">☰ List View</button>
+            </div>
+            <div id="members" class="grid-view"></div>
         </section>
 
-        <section class=" weather">
-            <h2>Weather in Bogota Colombia</h2>
-            <div class="weather-table">
-                <span class="data-title">Temperature (°F):</span>
-                <span class="data-value" id="current-temperature">45</span>
-                <span class="data-title">Conditions:</span>
-                <span class="data-value">Sunny</span>
-                <span class="data-title">Wind (mph):</span>
-                <span class="data-value" id="wind-speed">4</span>
-                <span class="data-title">Wind Chill (°F):</span>
-                <span class="data-value" id="wind-chill-value"></span>
-            </div>
-        </section>
-        <section class="spotlights">
-            <h3>Spotlights</h3>
-        </section>
     </main>
 
     <footer>
@@ -99,6 +76,7 @@
     <script src="scripts/hamburger.js"></script>
     <script src="scripts/darkmode.js"></script>
     <script src="scripts/windchill.js"></script>
+    <script src="scripts/directory.js"></script>
 
 
 </body>

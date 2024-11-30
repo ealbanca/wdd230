@@ -460,3 +460,16 @@ body.dark-mode .wf1 input[type="submit"] {
 body.dark-mode .confirmation-main-container {
     color: #fff;
 }
+
+/* ---- Directory Page --- */
+
+#directory {
+    grid-column: 1/4;
+}
+
+.grid-view {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    grid-gap: 05px;
+    align-items: center;
+}

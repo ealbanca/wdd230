@@ -1,0 +1,65 @@
+[
+    {
+        "name": "Ecopetrol",
+        "address": "Carrera 13 No. 36 - 24, Bogotá D.C, Colombia",
+        "phone": "+57 310 315 8600",
+        "website": "https://www.ecopetrol.com.co/wps/portal/Home/en",
+        "image": "ecopetrol.webp",
+        "membership": "Membership: Gold",
+        "description": "Ecopetrol is Colombia's largest oil and gas company.Founded in 1951 and primarily government-owned, it plays a key role in Colombia's energy sector and is focused on sustainability and transitioning to cleaner energy."
+    },
+    {
+        "name": "Bancolombia",
+        "address": "Carrera 48 # 26 - 85 Bogota, Colombia",
+        "phone": "+57 (601) 343 0000",
+        "website": "https://www.bancolombia.com/wps/portal/about-us",
+        "image": "bancolombia.webp",
+        "membership": "Membership: Gold",
+        "description": "Bancolombia is one of Colombia's largest banks, offering services like savings, loans, and insurance. Founded in 1945, it has a strong digital presence and operates in several countries."
+    },
+    {
+        "name": "Satena",
+        "address": "El Dorado Avenue # 103-08 Bogotá-Colombia",
+        "phone": "018000912034",
+        "website": "https://www.satena.com/",
+        "image": "satena.webp",
+        "membership": "Membership: Silver",
+        "description": "SATENA is a Colombian government-owned airline, founded in 1962, that provides domestic flights to remote and underserved regions, helping improve accessibility within the country."
+    },
+    {
+        "name": "Claro Colombia",
+        "address": "Plaza Claro Carrera 68A No.24B-10 Torre 1 Bogotá - Colombia",
+        "phone": "+57 1 7429797",
+        "website": "https://www.claro.com/",
+        "image": "claro.webp",
+        "membership": "Membership: Silver",
+        "description": "Claro Colombia is a major telecommunications company offering mobile, internet, TV, and fixed-line services, known for its wide coverage and innovation. It is a subsidiary of América Móvil."
+    },
+    {
+        "name": "Grupo Nutresa",
+        "address": "Cra. 65b #1140, Bogotá, Colombia",
+        "phone": "(601) 4173200",
+        "website": "https://gruponutresa.com/en/home/",
+        "image": "nutresa.webp",
+        "membership": "Membership: Gold",
+        "description": "Grupo Nutresa is a Colombian multinational food company, founded in 1920, known for producing processed meats, chocolates, biscuits, and beverages, with a strong focus on quality, innovation, and sustainability."
+    },
+    {
+        "name": "Argos",
+        "address": "Carrera 43A 1A sur 143 Bogota, Colombia",
+        "phone": "+57 6043198700",
+        "website": "https://argos.co/en/",
+        "image": "argos.webp",
+        "membership": "Membership: Bronze",
+        "description": "Argos is a Colombian multinational company, founded in 1934, specializing in cement, concrete, and energy, with a focus on sustainability and innovation."
+    },
+    {
+        "name": "Grupo Aval",
+        "address": "Calle 24A # 59 - 42 Bogotá D.C, Colombia",
+        "phone": "018000111901",
+        "website": "https://www.grupoaval.com/home",
+        "image": "aval.webp",
+        "membership": "Membership: Bronze",
+        "description": "Grupo Aval is a major Colombian financial conglomerate, founded in 1994, owning several banks and offering banking, insurance, and investment services. It plays a key role in Colombia's financial sector."
+    }
+]
