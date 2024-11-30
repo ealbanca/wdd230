@@ -481,6 +481,16 @@ body.dark-mode .confirmation-main-container {
     font-size: 0.9rem;
 }
 
+#members.grid-view h3 {
+    font-size: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+#members.grid-view p {
+    margin-bottom: 0.5rem;
+}
+
 #grid-view,
 #list-view {
     margin-bottom: 1rem;
@@ -514,6 +524,15 @@ body.dark-mode .confirmation-main-container {
     display: block;
     font-family: "Poppins", sans-serif;
     font-size: 0.9rem;
+}
+
+#members.list-view h3 {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+#members.list-view p {
+    margin-bottom: 0.5rem;
 }
 
 #members.list-view .member {
