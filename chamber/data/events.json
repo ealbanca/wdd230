@@ -1,56 +1,56 @@
 {
     "list": [
         {
-            "info": "Country",
+            "info": "Monday",
             "links": [
                 {
-                    "url": "https://en.wikipedia.org/wiki/Colombia",
-                    "title": "Colombia"
+                    "url": "https://www.eventbrite.com/e/workshop-de-ia-para-lideres-empresariales-tickets-1067712901029?aff=ebdssbdestsearch",
+                    "title": "IA Workshop for companies"
                 }
             ]
         },
         {
-            "info": "Department",
+            "info": "Tuesday",
             "links": [
                 {
-                    "url": "https://en.wikipedia.org/wiki/Cundinamarca_Department",
-                    "title": "Cundinamarca"
+                    "url": "https://www.eventbrite.com/e/e-commerce-express-domina-el-dropshipping-mind-bogota-tickets-1049980318397?aff=ebdssbdestsearch",
+                    "title": "E-commerce Express: Domain the Dropshipping"
                 }
             ]
         },
         {
-            "info": "Current Mayor",
+            "info": "Wednesday",
             "links": [
                 {
-                    "url": "https://en.wikipedia.org/wiki/Carlos_Fernando_Gal%C3%A1n",
-                    "title": "Carlos Fernando Galán"
+                    "url": "https://www.eventbrite.com/e/monthly-firstfridayfair-business-data-tech-virtual-event-bog-tickets-26696017507?aff=ebdssbdestsearch",
+                    "title": "Monthly #FirstFridayFair Business, Data & Tech"
                 }
             ]
         },
         {
-            "info": "Time Zone",
+            "info": "Thursday",
             "links": [
                 {
-                    "url": "https://en.wikipedia.org/wiki/UTC%E2%88%9205:00",
-                    "title": "UTC 5"
+                    "url": "https://www.eventbrite.com/e/the-founders-guide-to-securing-angel-capital-tickets-1097551679619?aff=ebdssbdestsearch",
+                    "title": "The Founder Guide to Securing Angel Capital"
                 }
             ]
         },
         {
-            "info": "Largest locality by population",
+            "info": "Friday",
             "links": [
                 {
-                    "url": "https://en.wikipedia.org/wiki/Suba,_Bogot%C3%A1",
-                    "title": "Suba (1.218.213)"
+                    "url": "https://www.eventbrite.com/e/raising-from-angels-how-what-and-why-tickets-1098899711619?aff=ebdssbdestsearch",
+                    "title": "Raising from Angels: How, What, and Why"
                 }
             ]
         },
         {
-            "info": "Primary Airport",
+            "info": "Saturday",
             "links": [
                 {
-                    "url": "https://en.wikipedia.org/wiki/El_Dorado_International_Airport",
-                    "title": "El Dorado International Airport"
+                    "url": "https://www.eventbrite.com/e/transform-your-business-with-drive-bogota-tickets-1011353073267?aff=ebdssbdestsearch",
+                    "title": "Transform Your Business with D.R.I.V.E. - Bogotá"
                 }
             ]
         }
