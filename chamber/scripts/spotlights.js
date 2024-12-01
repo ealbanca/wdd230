@@ -1,14 +1,14 @@
-const baseUrl = "https://ealbanca.github.io/wdd230/";
-const linksUrl = "https://ealbanca.github.io/wdd230/chamber/data/spotlights.json";
+const baseURL = "https://ealbanca.github.io/wdd230/";
+const linksURL = "https://ealbanca.github.io/wdd230/chamber/data/spotlights.json";
 
-async function getspotlightslink() {
-    const response = await fetch(linksUrl);
+async function getLinks() {
+    const response = await fetch(linksURL);
     const data = await response.json();
-    displaySpotlightsLinks(data);
+    displayLinks(data);
 }
 
-const displaySpotlightsLinks = (information) => {
-    const infoList = document.querySelector('.spotlights ul');
+const displayLinks = (information) => {
+    const infoList = document.querySelector('.infocard ul');
     information.list.forEach((info) => {
 
         let informationContent = document.createElement('li');
