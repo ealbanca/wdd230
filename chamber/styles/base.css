@@ -4,6 +4,30 @@
     box-sizing: border-box;
 }
 
+#banner {
+    display: none;
+    /* Initially hide the banner */
+}
+
+.banner-content {
+    display: flex;
+    background-color: rgb(208, 218, 81);
+}
+
+.banner-text {
+    padding: 0.8rem;
+    text-align: center;
+    color: black;
+}
+
+.banner-content {
+    display: flex;
+    justify-content: center;
+}
+
+
+
+
 body {
     background-color: white;
     font-size: 22px;
