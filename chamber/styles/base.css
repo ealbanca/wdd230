@@ -26,8 +26,6 @@
 }
 
 
-
-
 body {
     background-color: white;
     font-size: 22px;
@@ -285,6 +283,13 @@ h2 {
     margin-bottom: 1rem;
     font-family: "Poppins", sans-serif;
 }
+
+.spotlights img {
+    margin-top: 2rem;
+    align-items: center;
+    justify-content: center;
+}
+
 
 
 footer {
