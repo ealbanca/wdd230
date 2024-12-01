@@ -1,5 +1,5 @@
 /* Media Query for Larger Viewer */
-@media (580px <=width <=839px) {
+@media (580px <=width <=1199px) {
 
     h1 {
         font-family: "Poppins", sans-serif;
@@ -57,23 +57,10 @@
         object-fit: cover;
     }
 
-
     .herolabel {
         position: absolute;
-        top: 14rem;
-        left: 2.5rem;
-        background: radial-gradient(#fff, white);
-        padding: 1rem;
-        box-shadow: 4rem 4rem 4rem #2c2c2c;
-        opacity: 0.75;
-    }
-
-    .herolabel p {
-        margin: 0;
-        padding: .25rem;
-        font-weight: 700;
-        font-size: 2rem;
-        font-family: "Poppins", sans-serif;
+        top: 2.5rem;
+        left: 18rem;
     }
 
     footer {

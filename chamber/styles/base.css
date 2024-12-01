@@ -248,21 +248,10 @@ h2 {
 
 .herolabel {
     position: absolute;
-    top: 7rem;
-    left: 0.1rem;
-    background: radial-gradient(#fff, white);
-    padding: 0.70rem;
-    box-shadow: 2rem 2rem 2rem #2c2c2c;
-    opacity: 0.75;
-
-}
-
-.herolabel p {
-    margin: 0;
-    padding: .10rem;
-    font-weight: 500;
-    font-size: 0.90rem;
-    font-family: "Poppins", sans-serif;
+    top: 1rem;
+    left: 1.2rem;
+    color: #fff;
+    text-align: center;
 }
 
 
@@ -282,6 +271,10 @@ h2 {
     padding: 1rem;
     margin-bottom: 1rem;
     font-family: "Poppins", sans-serif;
+}
+
+.events ul li {
+    margin-top: 1rem;
 }
 
 .spotlights img {
