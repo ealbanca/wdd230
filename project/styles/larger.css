@@ -83,7 +83,9 @@
         padding-top: 3.5rem;
     }
 
-
+    iframe {
+        grid-column: 1/4;
+    }
 
     footer {
         display: grid;
