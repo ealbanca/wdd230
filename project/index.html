@@ -44,6 +44,7 @@
         </div>
     </div>
     <header>
+
         <a id="logo_link" href="index.html">
             <img class="logo" src="images/logo.webp" alt="Logo Bogota chamber of commerce">
         </a>
@@ -59,7 +60,6 @@
 
         <button id="menu"></button>
         <!-- Rounded switch -->
-
         <label class="switch">
             <input type="checkbox" onclick="myFunction()">
             <span class="slider round"></span>
@@ -75,42 +75,68 @@
                 <img src="images/hero-large.webp" alt="Hero image">
             </picture>
             <div class="herolabel">
-                <h1>Bogota Chamber of Commerce</h1>
-                <h4>Empowering Business, Enriching Community</h4>
+                <h1>Ride the Island, Feel the Breeze!</h1>
             </div>
         </div>
 
-        <section class="events">
-            <h3>Events</h3>
-            <ul>
-                <!--Events are here-->
-            </ul>
+        <section class="message">
+            <p>
+                Scoots is a friendly motor scooter rental company in Cozumel, offering easy rentals for locals,
+                tourists, and cruise passengers. With locations near the Playa del Carmen-Cozumel Ferry dock and
+                Terminal Puerta Maya, we provide scooters, jeeps, and ATVs for exploring the island’s beautiful southern
+                and eastern coasts. Our hassle-free service lets you enjoy the freedom of discovering Cozumel at your
+                own pace!</p>
+
         </section>
 
-        <section class="weather-info">
-            <h2>Weather in Bogota</h2>
-            <figure class="weather-figure">
-                <img id="weather-icon" src="images/default-icon.png" alt="Weather icon">
-                <figcaption id="weather-caption"></figcaption>
+        <section class="atvs">
+            <figure>
+                <picture>
+                    <source srcset="images/atvs-small.webp" media="(max-width: 400px)">
+                    <source srcset="images/atvs-medium.webp" media="(max-width: 800px)">
+                    <source srcset="images/jaimeduquepark-large.webp" media="(max-width: 1200px)">
+                    <img src="images/atvs-large.webp" alt="ATVs" width="400" loading="lazy">
+                </picture>
+                <h3>Side-by-Side ATVs</h3>
+                <figcaption>Jaime Duque Park is a large theme park with attractions like
+                    replicas of world landmarks, a zoo, a botanical garden, a museum, and a dinosaur sculpture. It
+                    offers amusement rides making it a popular family destination.
+                </figcaption>
             </figure>
-            <div id="forecast">
-                <!-- Forecast populated here -->
-            </div>
         </section>
 
-        <section class="spotlights">
-            <h3>Spotlights</h3>
-            <ul>
-                <li><a href="https://www.satena.com/" target="_blank"><img src="images/satena.webp" alt="satena"></a>
-                </li>
-                <li><a href="https://www.bancolombia.com/wps/portal/about-us" target="_blank"><img
-                            src="images/bancolombia.webp" alt="bancolombia"></a>
-                </li>
-                <li><a href="https://www.ecopetrol.com.co/wps/portal/Home/en" target="_blank"><img
-                            src="images/ecopetrol.webp" alt="ecopetrol"></a>
-                </li>
-            </ul>
+        <section class="honda-scooters">
+            <figure>
+                <picture>
+                    <source srcset="images/honda-small.webp" media="(max-width: 400px)">
+                    <source srcset="images/honda-medium.webp" media="(max-width: 200px)">
+                    <source srcset="images/honda-large.webp" media="(max-width: 100px)">
+                    <img src="images/honda-large.webp" alt="Honda Scooter" width="400" loading="lazy">
+                </picture>
+                <h2>Honda Motor Scooters</h2>
+                <figcaption>Jaime Duque Park is a large theme park with attractions like
+                    replicas of world landmarks, a zoo, a botanical garden, a museum, and a dinosaur sculpture. It
+                    offers amusement rides making it a popular family destination.
+                </figcaption>
+            </figure>
         </section>
+
+        <section class="jeeps">
+            <figure>
+                <picture>
+                    <source srcset="images/jeep-small.webp" media="(max-width: 400px)">
+                    <source srcset="images/jeep-medium.webp" media="(max-width: 800px)">
+                    <source srcset="images/jeep-large.webp" media="(max-width: 1200px)">
+                    <img src="images/jeep-large.webp" alt="Jepp" width="400" loading="lazy">
+                </picture>
+                <h3>Jeeps</h3>
+                <figcaption>Jaime Duque Park is a large theme park with attractions like
+                    replicas of world landmarks, a zoo, a botanical garden, a museum, and a dinosaur sculpture. It
+                    offers amusement rides making it a popular family destination.
+                </figcaption>
+            </figure>
+        </section>
+
     </main>
 
     <footer>
@@ -125,7 +151,6 @@
     <script src="scripts/windchill.js"></script>
     <script src="scripts/weather.js"></script>
     <script src="scripts/banner.js"></script>
-    <script src="scripts/events.js"></script>
 
 
 </body>

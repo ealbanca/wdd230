@@ -3,7 +3,7 @@
 
     h1 {
         font-family: "Poppins", sans-serif;
-        font-size: 2rem;
+        font-size: 2.5rem;
     }
 
     h4 {
@@ -42,7 +42,7 @@
         display: flex;
         align-items: flex-end;
         justify-content: center;
-        top: 0.4rem;
+        top: 0.3rem;
         right: 1rem;
     }
 
@@ -61,16 +61,8 @@
         grid-column: 1/4;
     }
 
-    .hero img {
-        height: auto;
-        width: 100%;
-        object-fit: cover;
-    }
-
-    .herolabel {
-        position: absolute;
-        top: 2.5rem;
-        left: 18rem;
+    .message {
+        grid-column: 1/4;
     }
 
     footer {
