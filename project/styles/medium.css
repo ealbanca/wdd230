@@ -1,0 +1,99 @@
+/* Media Query for Larger Viewer */
+@media (580px <=width <=1199px) {
+
+    h1 {
+        font-family: "Poppins", sans-serif;
+        font-size: 2rem;
+    }
+
+    h4 {
+        font-family: "Poppins", sans-serif;
+        font-size: 1rem;
+    }
+
+    .logo {
+        margin-left: 1rem;
+        height: 80px;
+    }
+
+    nav ul {
+        flex-direction: row;
+        justify-content: space-around;
+        background-color: var(--background);
+        color: white;
+        padding: 15px;
+        font-size: medium;
+    }
+
+    main {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 20px;
+    }
+
+    .switch {
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+        top: 0.4rem;
+        right: 1rem;
+    }
+
+    .navigation {
+        display: block;
+        width: 100%;
+    }
+
+
+    #menu {
+        display: none;
+    }
+
+    .hero {
+        position: relative;
+        grid-column: 1/4;
+    }
+
+    .hero img {
+        height: auto;
+        width: 100%;
+        object-fit: cover;
+    }
+
+    .herolabel {
+        position: absolute;
+        top: 2.5rem;
+        left: 18rem;
+    }
+
+    footer {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    /*Discover page */
+    .discover-sidebar {
+        grid-column: 1 / 2;
+    }
+
+    .discover-main {
+        grid-template-columns: 1fr 3fr;
+    }
+
+    .discover-main-content {
+        grid-column: 2 / 3;
+    }
+
+    .gallery {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .gallery img:hover {
+        transform: scale(1.05);
+    }
+
+    .confirmation-main-container {
+        text-align: center;
+        grid-template-columns: 1fr;
+    }
+}

@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Edwin Hared Albancando Robles">
+    <meta name="description" content="This is the rental page of Scoots that displays prices">
+    <meta property="og:title" content="Scoots project for WWD 230">
+    <meta property="og:type" content="website">
+    <meta property="og:image"
+        content="https://www.google.com/url?sa=i&url=https%3A%2F%2Fberyl.cc%2Fnews%2F2023%2F11%2F14%2Fisland-e-scooters-celebrate-third-anniversary&psig=AOvVaw0ASuiAQiwiRhJp_GpCTEAF&ust=1734235287265000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCNDYmoywpooDFQAAAAAdAAAAABAE">
+    <meta property="og:url" content="https://ealbanca.github.io/wdd230/project">
+
+    <title>Scoots Rentals</title>
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="icon" href="images/favicon.ico">
+
+</head>
+
+<body>
+    <div class="banner">
+        <div class="banner-content">
+            <div class="banner-text">
+                <p><strong>Reminder:</strong> Don't forget to attend the chamber of commerce meet and greet on Wednesday
+                    at 7:00 p.m.</p>
+            </div>
+            <button class="banner-close" type="button">❌</button>
+        </div>
+    </div>
+    <header>
+        <a id="logo_link" href="index.html">
+            <img class="logo" src="images/logo.webp" alt="Logo Bogota chamber of commerce">
+        </a>
+
+        <nav class="navigation">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="rentals.html">Rentals</a></li>
+                <li><a href="reservations.html">Reservations</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+
+        <button id="menu"></button>
+        <!-- Rounded switch -->
+
+        <label class="switch">
+            <input type="checkbox" onclick="myFunction()">
+            <span class="slider round"></span>
+        </label>
+
+    </header>
+    <main class="discover-main">
+        <aside class="discover-sidebar">
+
+            <section>
+                <h2>Welcome</h2>
+                <p id="visitMessage"></p>
+            </section>
+            <section class="infocard">
+                <h2>Information card</h2>
+                <ul>
+                    <!--Here are the links-->
+                </ul>
+            </section>
+
+            <section class="video-content">
+                <h2>Learn more about Bogota</h2>
+                <iframe width="290" height="185"
+                    src="https://www.youtube.com/embed/FgcLklxcqPo?si=GuDJgxUbrPXgmtyD"></iframe>
+            </section>
+
+            <section class="weather-info">
+                <h2>Weather in Bogota Colombia</h2>
+                <figure class="weather-figure">
+                    <img id="weather-icon" src="images/default-icon.png" alt="Weather icon">
+                    <figcaption id="weather-caption"></figcaption>
+                </figure>
+                <div id="forecast">
+                    <!-- Forecast populated here -->
+                </div>
+            </section>
+
+        </aside>
+        <section class="discover-main-content">
+            <h1>Discover Bogota, Colombia</h1>
+            <div class="gallery">
+                <figure>
+                    <picture>
+                        <source srcset="images/jaimeduquepark-small.webp" media="(max-width: 400px)">
+                        <source srcset="images/jaimeduquepark-medium.webp" media="(max-width: 800px)">
+                        <source srcset="images/jaimeduquepark-large.webp" media="(max-width: 1200px)">
+                        <img src="images/jaimeduquepark-large.webp" alt="Jaime Duque Park" width="1200" height="800"
+                            loading="lazy">
+                    </picture>
+                    <figcaption>Jaime Duque Park is a large theme park with attractions like
+                        replicas of world landmarks, a zoo, a botanical garden, a museum, and a dinosaur sculpture. It
+                        offers amusement rides making it a popular family destination.
+                    </figcaption>
+                </figure>
+                <figure>
+                    <picture>
+                        <source srcset="images/monserrate-small.webp" media="(max-width: 400px)">
+                        <source srcset="images/monserrate-medium.webp" media="(max-width: 800px)">
+                        <source srcset="images/monserrate-large.webp" media="(max-width: 1200px)">
+                        <img src="images/monserrate-large.webp" alt="Monserrate Peak" width="1200" height="800"
+                            loading="lazy">
+                    </picture>
+                    <figcaption>Monserrate is a prominent mountain in Bogotá, Colombia, offering stunning views of the
+                        city. Accessible by cable car, funicular, or hiking, it features a church at the summit, a
+                        popular pilgrimage site. Monserrate is a major tourist attraction, known for its scenic beauty,
+                        cultural significance, and panoramic views. </figcaption>
+                </figure>
+                <figure>
+                    <picture>
+                        <source srcset="images/virgilio-small.webp" media="(max-width: 400px)">
+                        <source srcset="images/virgilio-medium.webp" media="(max-width: 800px)">
+                        <source srcset="images/virgilio-large.webp" media="(max-width: 1200px)">
+                        <img src="images/virgilio-large.webp" alt="Virgilio Barco Library" width="1200" height="800"
+                            loading="lazy">
+                    </picture>
+                    <figcaption>The Virgilio Barco Library is a modern architectural landmark
+                        featuring a vast collection of books, digital resources, and cultural spaces. Surrounded by a
+                        beautiful park, it offers a peaceful environment for reading, learning, and community events. It
+                        is named after former Colombian president.
+                    </figcaption>
+                </figure>
+                <figure>
+                    <picture>
+                        <source srcset="images/botanicgarden-small.webp" media="(max-width: 400px)">
+                        <source srcset="images/botanicgarden-medium.webp" media="(max-width: 800px)">
+                        <source srcset="images/botanicgarden-large.webp" media="(max-width: 1200px)">
+                        <img src="images/botanicgarden-large.webp" alt="Botanic Garden" width="1200" height="800"
+                            loading="lazy">
+                    </picture>
+                    <figcaption>The Bogotá Botanical Garden is a large green space in the city, showcasing a diverse
+                        collection of Colombian flora. It features themed gardens, including tropical, aquatic, and
+                        orchid sections, along with educational exhibits and walking trails.
+                    </figcaption>
+                </figure>
+
+                <figure>
+                    <picture>
+                        <source srcset="images/goldmuseum-small.webp" media="(max-width: 400px)">
+                        <source srcset="images/goldmuseum-medium.webp" media="(max-width: 800px)">
+                        <source srcset="images/goldmuseum-large.webp" media="(max-width: 1200px)">
+                        <img src="images/goldmuseum-large.webp" alt="Gold Museum in Bogota" width="1200" height="800"
+                            loading="lazy">
+                    </picture>
+                    <figcaption>The Museo del Oro in Bogotá is a renowned museum that houses an extensive collection of
+                        pre-Columbian gold artifacts and other indigenous treasures. It offers insights
+                        into the rich cultural history showcasing pieces of art and metallurgy.
+                    </figcaption>
+                </figure>
+                <figure>
+                    <picture>
+                        <source srcset="images/bolivar-small.webp" media="(max-width: 400px)">
+                        <source srcset="images/bolivar-medium.webp" media="(max-width: 800px)">
+                        <source srcset="images/bolivar-large.webp" media="(max-width: 1200px)">
+                        <img src="images/bolivar-large.webp" alt="Simon Bolivar main square" width="1200" height="800"
+                            loading="lazy">
+                    </picture>
+                    <figcaption>Simón Bolívar Square in Bogotá is a historic and central public space surrounded by
+                        important government buildings. It serves as a venue for political events, protests, and
+                        cultural activities. The square is named after the independence hero Simón Bolívar and is a key
+                        landmark in the heart of the city.
+                    </figcaption>
+                </figure>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div id="currentYear"></div>
+        <div id="lastModified"></div>
+        <div>Contact<br><br> Calle 151 # 115-22<br> Bogota, Colombia<br>(385) 482-7531</div>
+    </footer>
+
+    <script src="scripts/getdates.js"></script>
+    <script src="scripts/hamburger.js"></script>
+    <script src="scripts/darkmode.js"></script>
+    <script src="scripts/windchill.js"></script>
+    <script src="scripts/localStorage.js"></script>
+    <script src="scripts/infocardlinks.js"></script>
+    <script src="scripts/weather.js"></script>
+
+
+</body>
+
+
+
+</html>

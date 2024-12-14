@@ -1,0 +1,100 @@
+/* Media Query for Larger Viewer */
+@media (min-width: 1200px) {
+
+    h1 {
+        font-family: "Poppins", sans-serif;
+        font-size: 2rem;
+    }
+
+    h4 {
+        font-family: "Poppins", sans-serif;
+        font-size: 1rem;
+    }
+
+    .logo {
+        margin-left: 2.5rem;
+        height: 100px;
+    }
+
+    nav ul {
+        flex-direction: row;
+        justify-content: space-around;
+        background-color: var(--background);
+        color: white;
+        padding: 15px;
+    }
+
+    main {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 20px;
+    }
+
+    .switch {
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+        right: 1.5rem;
+        top: 2.3rem
+    }
+
+    .navigation {
+        display: block;
+        width: 100%;
+    }
+
+
+    #menu {
+        display: none;
+    }
+
+    .hero {
+        position: relative;
+        grid-column: 1/4;
+    }
+
+    .hero img {
+        height: auto;
+        width: 100%;
+        height: fit-content;
+        object-fit: cover;
+    }
+
+
+    .herolabel {
+        position: absolute;
+        top: 5rem;
+        left: 42.5rem;
+    }
+
+    footer {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    /*Discover page */
+    .discover-sidebar {
+        grid-column: 1 / 2;
+    }
+
+    .discover-main {
+        grid-template-columns: 1fr 3fr;
+    }
+
+    .discover-main-content {
+        grid-column: 2 / 3;
+    }
+
+    .gallery {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .gallery img:hover {
+        transform: scale(1.05);
+    }
+
+    .confirmation-main-container {
+        text-align: center;
+        grid-template-columns: 1fr;
+    }
+}

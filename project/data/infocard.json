@@ -1,0 +1,58 @@
+{
+    "list": [
+        {
+            "info": "Country",
+            "links": [
+                {
+                    "url": "https://en.wikipedia.org/wiki/Colombia",
+                    "title": "Colombia"
+                }
+            ]
+        },
+        {
+            "info": "Department",
+            "links": [
+                {
+                    "url": "https://en.wikipedia.org/wiki/Cundinamarca_Department",
+                    "title": "Cundinamarca"
+                }
+            ]
+        },
+        {
+            "info": "Current Mayor",
+            "links": [
+                {
+                    "url": "https://en.wikipedia.org/wiki/Carlos_Fernando_Gal%C3%A1n",
+                    "title": "Carlos Fernando Galán"
+                }
+            ]
+        },
+        {
+            "info": "Time Zone",
+            "links": [
+                {
+                    "url": "https://en.wikipedia.org/wiki/UTC%E2%88%9205:00",
+                    "title": "UTC 5"
+                }
+            ]
+        },
+        {
+            "info": "Largest locality by population",
+            "links": [
+                {
+                    "url": "https://en.wikipedia.org/wiki/Suba,_Bogot%C3%A1",
+                    "title": "Suba (1.218.213)"
+                }
+            ]
+        },
+        {
+            "info": "Primary Airport",
+            "links": [
+                {
+                    "url": "https://en.wikipedia.org/wiki/El_Dorado_International_Airport",
+                    "title": "El Dorado International Airport"
+                }
+            ]
+        }
+    ]
+}

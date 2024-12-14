@@ -1,0 +1,58 @@
+{
+    "list": [
+        {
+            "info": "Monday",
+            "links": [
+                {
+                    "url": "https://www.eventbrite.com/e/workshop-de-ia-para-lideres-empresariales-tickets-1067712901029?aff=ebdssbdestsearch",
+                    "title": "IA Workshop for companies"
+                }
+            ]
+        },
+        {
+            "info": "Tuesday",
+            "links": [
+                {
+                    "url": "https://www.eventbrite.com/e/e-commerce-express-domina-el-dropshipping-mind-bogota-tickets-1049980318397?aff=ebdssbdestsearch",
+                    "title": "E-commerce Express: Domain the Dropshipping"
+                }
+            ]
+        },
+        {
+            "info": "Wednesday",
+            "links": [
+                {
+                    "url": "https://www.eventbrite.com/e/monthly-firstfridayfair-business-data-tech-virtual-event-bog-tickets-26696017507?aff=ebdssbdestsearch",
+                    "title": "Monthly #FirstFridayFair Business, Data & Tech"
+                }
+            ]
+        },
+        {
+            "info": "Thursday",
+            "links": [
+                {
+                    "url": "https://www.eventbrite.com/e/the-founders-guide-to-securing-angel-capital-tickets-1097551679619?aff=ebdssbdestsearch",
+                    "title": "The Founder Guide to Securing Angel Capital"
+                }
+            ]
+        },
+        {
+            "info": "Friday",
+            "links": [
+                {
+                    "url": "https://www.eventbrite.com/e/raising-from-angels-how-what-and-why-tickets-1098899711619?aff=ebdssbdestsearch",
+                    "title": "Raising from Angels: How, What, and Why"
+                }
+            ]
+        },
+        {
+            "info": "Saturday",
+            "links": [
+                {
+                    "url": "https://www.eventbrite.com/e/transform-your-business-with-drive-bogota-tickets-1011353073267?aff=ebdssbdestsearch",
+                    "title": "Transform Your Business with D.R.I.V.E. - Bogotá"
+                }
+            ]
+        }
+    ]
+}

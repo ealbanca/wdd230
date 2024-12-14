@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Edwin Hared Albancando Robles">
+    <meta name="description" content="This is contact page for the scoots rental website">
+    <meta property="og:title" content="Scoots project for WWD 230">
+    <meta property="og:type" content="website">
+    <meta property="og:image"
+        content="https://www.google.com/url?sa=i&url=https%3A%2F%2Fberyl.cc%2Fnews%2F2023%2F11%2F14%2Fisland-e-scooters-celebrate-third-anniversary&psig=AOvVaw0ASuiAQiwiRhJp_GpCTEAF&ust=1734235287265000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCNDYmoywpooDFQAAAAAdAAAAABAE">
+    <meta property="og:url" content="https://ealbanca.github.io/wdd230/project">
+
+    <title>Scoots Contact</title>
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="icon" href="images/favicon.ico">
+
+</head>
+
+<body>
+    <div class="banner">
+        <div class="banner-content">
+            <div class="banner-text">
+                <p><strong>Reminder:</strong> Don't forget to attend the chamber of commerce meet and greet on Wednesday
+                    at 7:00 p.m.</p>
+            </div>
+            <button class="banner-close" type="button">❌</button>
+        </div>
+    </div>
+    <header>
+        <a id="logo_link" href="index.html">
+            <img class="logo" src="images/logo.webp" alt="Logo Bogota chamber of commerce">
+        </a>
+
+        <nav class="navigation">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="rentals.html">Rentals</a></li>
+                <li><a href="reservations.html">Reservations</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+
+        <button id="menu"></button>
+        <!-- Rounded switch -->
+
+        <label class="switch">
+            <input type="checkbox" onclick="myFunction()">
+            <span class="slider round"></span>
+        </label>
+
+    </header>
+    <main class="discover-main">
+        <aside class="discover-sidebar">
+
+            <section class="card">
+                <h3>NP (Non-Profit) Membership</h3>
+                <h4>Cost: Free <br><br>Benefits:
+                    <br>- Access to Chamber events
+                    <br>- Networking with local businesses
+                    <br>- Listing on the Chamber website
+                </h4>
+            </section>
+            <section class="card">
+                <h3>Bronze Membership</h3>
+                <h4>Cost: $200 per year <br><br>Benefits:
+                    <br>- Chamber directory listing
+                    <br>- Invitation to general networking events
+                    <br>- Discounted rates on events and programs
+                    <br>- Access to basic business development resources
+                </h4>
+
+            </section>
+            <section class="card">
+                <h3>Silver Membership</h3>
+                <h4>Cost: $500 per year<br><br>Benefits:
+                    <br>- All Bronze level benefits
+                    <br>- Spotlight position on the Chamber homepage
+                    <br>- Invitations to special events, webinars, and training sessions
+                    <br>- Access to advanced business development resources
+                    <br>- Discounted advertising opportunities
+                </h4>
+            </section>
+            <section class="card">
+                <h3>Gold Membership </h3>
+                <h4>Cost: $1,000 per year <br><br>Benefits:
+                    <br>- All Silver level benefits
+                    <br>- Featured in the Chamber monthly newsletter
+                    <br>- VIP invitations to exclusive events
+                    <br>- Free or highly discounted event sponsorships
+                    <br>- Complimentary training and business consulting sessions
+                </h4>
+            </section>
+        </aside>
+        <form method="get" action="thankyou.html" class="wf1">
+            <h1>Join the Chamber</h1>
+            <fieldset>
+                <div id="form-message"></div>
+                <label> First Name* <input type="text" id="fname" name="fname" required autofocus></label>
+                <label> Last Name* <input type="text" id="lname" name="lname" required></label>
+                <label> Title / Position* <input type="text" id="title" name="title" pattern="^[A-Za-z0-9-\s]{7,}$"
+                        title="Only letters, numbers, hyphens, and spaces allowed. Min 7 characters." required></label>
+                <label> Email address* <input type="email" id="email" name="email" placeholder="example@gmail.com"
+                        required></label>
+                <label> Mobile phone number* <input type="tel" id="phone" name="phone" required></label>
+                <label> Business / Organization's name* <input type="text" id="business" name="business"
+                        required></label>
+                <label>Membership level
+                    <select name="Membership">
+                        <option value="">Please Select</option>
+                        <option value="np"> NP Membership</option>
+                        <option value="bronze"> Bronze Membership</option>
+                        <option value="silver"> Silver Membership</option>
+                        <option value="gold"> Gold Membership</option>
+                    </select>
+                </label>
+                <label>Business / Organization's description<textarea name="org-description" id="org-description"
+                        rows="6"></textarea></label>
+
+                <input type="hidden" name="timestamp" id="timestamp">
+                <input type="submit" value="Join the Chamber">
+
+            </fieldset>
+        </form>
+    </main>
+
+
+
+    <footer>
+        <div id="currentYear"></div>
+        <div id="lastModified"></div>
+        <div>Contact<br><br> Calle 151 # 115-22<br> Bogota, Colombia<br>(385) 482-7531</div>
+    </footer>
+
+    <script src="scripts/getdates.js"></script>
+    <script src="scripts/hamburger.js"></script>
+    <script src="scripts/darkmode.js"></script>
+    <script src="scripts/windchill.js"></script>
+    <script src="scripts/localStorage.js"></script>
+    <script src="scripts/infocardlinks.js"></script>
+
+
+</body>
+
+
+
+</html>
