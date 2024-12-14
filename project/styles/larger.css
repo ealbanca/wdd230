@@ -16,6 +16,12 @@
         height: 100px;
     }
 
+    header {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
     nav ul {
         flex-direction: row;
         justify-content: space-around;
