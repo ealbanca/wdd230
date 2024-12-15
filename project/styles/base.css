@@ -37,6 +37,7 @@ header {
 .banner {
     display: none;
     color: var(--text-color);
+    font-size: small;
     padding: 10px;
     text-align: center;
     position: relative;

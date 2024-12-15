@@ -23,6 +23,10 @@
         height: 80px;
     }
 
+    .banner {
+        font-size: large;
+    }
+
     nav ul {
         flex-direction: row;
         justify-content: space-around;
