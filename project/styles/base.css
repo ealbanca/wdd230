@@ -11,28 +11,6 @@
     box-sizing: border-box;
 }
 
-#banner {
-    display: none;
-    /* Initially hide the banner */
-}
-
-.banner-content {
-    display: flex;
-    background-color: rgb(208, 218, 81);
-}
-
-.banner-text {
-    padding: 0.8rem;
-    text-align: center;
-    color: black;
-}
-
-.banner-content {
-    display: flex;
-    justify-content: center;
-}
-
-
 body {
     background-color: white;
     font-size: 22px;
@@ -40,40 +18,6 @@ body {
     max-width: 1900px;
 }
 
-body.dark-mode {
-    background-color: black;
-
-}
-
-body.dark-mode footer,
-body.dark-mode .navigation ul,
-body.dark-mode .navigation ul a {
-    background-color: #8a8a8a;
-    color: #000000;
-    font-weight: 700;
-}
-
-
-
-body.dark-mode #menu.open::before,
-body.dark-mode #menu::before {
-    color: white;
-    font-weight: 700;
-}
-
-body.dark-mode nav a:hover {
-    font-weight: 700;
-    color: white;
-}
-
-body.dark-mode .weather-info,
-body.dark-mode .events,
-body.dark-mode #weather-caption,
-body.dark-mode .weather-figure figcaption,
-body.dark-mode .spotlights {
-    background-color: #d8d6d6;
-    color: #000000;
-}
 
 header {
     width: 100%;
@@ -89,6 +33,32 @@ header {
     display: flex;
     justify-content: flex-start;
 }
+
+.banner {
+    display: none;
+    color: var(--text-color);
+    padding: 10px;
+    text-align: center;
+    position: relative;
+    background-color: rgb(208, 218, 81);
+    grid-column: 1/4;
+}
+
+.banner.active {
+    display: block;
+    width: 100%;
+}
+
+#close-banner {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    background: none;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+}
+
 
 .navigation {
     display: none;
@@ -157,72 +127,6 @@ section ul {
     font-family: "Poppins", sans-serif;
 }
 
-.switch {
-    position: absolute;
-    right: 1rem;
-    top: 0.7rem;
-    display: inline-block;
-    width: 40px;
-    height: 22px;
-    align-self: center;
-
-
-}
-
-.switch input {
-    opacity: 0;
-    width: 0;
-    height: 0;
-}
-
-.slider {
-    position: absolute;
-    cursor: pointer;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: var(--button);
-    -webkit-transition: .4s;
-    transition: .4s;
-
-}
-
-.slider:before {
-    position: absolute;
-    ;
-    content: "";
-    height: 20px;
-    width: 20px;
-    bottom: 1px;
-    background-color: white;
-    -webkit-transition: .4s;
-    transition: .4s;
-}
-
-input:checked+.slider {
-    background-color: #8a8a8a;
-}
-
-input:focus+.slider {
-    box-shadow: 0 0 1px #072453;
-}
-
-input:checked+.slider:before {
-    -webkit-transform: translateX(20px);
-    -ms-transform: translateX(20px);
-    transform: translateX(20px);
-}
-
-/* Rounded sliders */
-
-.slider.round {
-    border-radius: 50px;
-}
-
-.slider.round:before {
-    border-radius: 50%;
-}
 
 main {
     display: flex;
@@ -267,7 +171,10 @@ h2 {
     transform: translate(-50%, -50%);
 }
 
-.herolabel button {
+.herolabel button,
+.atvs button,
+.honda-scooters button,
+.jeeps button {
     border-radius: 6px;
     outline: 0;
     display: inline-block;
@@ -278,7 +185,10 @@ h2 {
     cursor: pointer;
 }
 
-.herolabel button:hover {
+.herolabel button:hover,
+.atvs button:hover,
+.honda-scooters button:hover,
+.jeeps button:hover {
     background-color: var(--background);
     color: white;
 }
@@ -302,6 +212,12 @@ h2 {
     font-family: "Poppins", sans-serif;
 }
 
+.honda-scooters figcaption,
+.jeeps figcaption,
+.atvs figcaption {
+    margin-bottom: 1.5rem;
+}
+
 
 .message {
     display: flex;
@@ -322,13 +238,48 @@ iframe {
     margin-top: 30px;
 }
 
+#weather {
+    background-color: var(--background);
+    color: var(--lightfont);
+    padding: 1rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    grid-column: 1/4;
+    text-align: center;
+}
+
+.current-weather {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.current-weather,
+.forecast-weather {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.current-weather p,
+.current-weather img {
+    margin: 0 10px;
+}
+
+
+.smedia {
+    padding: 1rem;
+}
+
 footer {
     background: var(--background);
     color: var(--button);
     text-align: center;
     font-family: "Poppins", sans-serif;
     font-style: normal;
-    font-size: medium;
+    font-size: large;
     max-width: 100%;
     padding: 2rem;
     display: flex;
@@ -373,25 +324,9 @@ h2 {
     text-align: center;
 }
 
-body.dark-mode .discover-sidebar section {
-    border-color: #8a8a8a;
-    color: #000000;
-    background-color: #d8d6d6;
-}
-
 .discover-main-content h1 {
     color: black;
     text-align: center;
-}
-
-body.dark-mode .discover-main-content h1 {
-    color: white;
-    text-align: center;
-}
-
-
-body.dark-mode figcaption {
-    color: white;
 }
 
 .gallery {
@@ -501,45 +436,15 @@ form h1 {
     font-family: "Poppins", sans-serif;
 }
 
-body.dark-mode label,
-body.dark-mode form h1 {
-    color: #fff;
-}
-
-body.dark-mode fieldset {
-    border-color: white;
-}
-
-body.dark-mode .wf1 input[type="submit"] {
-    background-image: linear-gradient(#8a8a8a, #8a8a8a);
-    color: #000000;
-    font-weight: 500;
-}
-
 .confirmation-main-container {
     text-align: center;
     grid-template-columns: 1fr;
-}
-
-body.dark-mode .confirmation-main-container {
-    color: #fff;
 }
 
 /* ---- Directory Page --- */
 
 #directory {
     grid-column: 1/4;
-}
-
-body.dark-mode #grid-view,
-body.dark-mode #list-view {
-    background-image: linear-gradient(#8a8a8a, #8a8a8a);
-}
-
-body.dark-mode .grid-view .member,
-body.dark-mode .list-view .member {
-    background-color: #d8d6d6;
-    color: black;
 }
 
 .view-toggle {

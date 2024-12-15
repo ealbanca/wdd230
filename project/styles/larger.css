@@ -33,7 +33,6 @@
     main {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
-        gap: 20px;
     }
 
     .switch {
@@ -76,15 +75,20 @@
     }
 
     .jeeps h3 {
-        padding-top: 8rem;
+        padding-top: 6rem;
     }
 
     .atvs h3 {
-        padding-top: 3.5rem;
+        padding-top: 1.5rem;
     }
 
     iframe {
         grid-column: 1/4;
+    }
+
+    #weather {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
     }
 
     footer {

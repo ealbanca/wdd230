@@ -1,64 +1,47 @@
-const weatherIcon = document.querySelector('#weather-icon');
-const captionDesc = document.querySelector('#weather-caption');
-const forecastContainer = document.getElementById('forecast');
-
-const apiKey = 'e122671826e7ca9f9baca798d6779d26';
-const weatherUrl = `https://api.openweathermap.org/data/2.5/weather?lat=49.75&lon=6.64&units=imperial&appid=${apiKey}`;
-const forecastUrl = `https://api.openweathermap.org/data/2.5/forecast?lat=49.75&lon=6.64&units=imperial&appid=${apiKey}`;
-
-document.addEventListener('DOMContentLoaded', () => {
-    apiFetch();
-    fetchForecastData();
-});
-
-async function apiFetch() {
-    try {
-        const response = await fetch(weatherUrl);
-        if (response.ok) {
-            const data = await response.json();
-            displayResults(data);
-        } else {
-            throw Error(await response.text());
-        }
-    } catch (error) {
-        console.log(error);
-    }
+async function fetchWeather() {
+    const response = await fetch('https://api.openweathermap.org/data/2.5/weather?q=Cozumel&appid=ab520e4710bc7b1e7a9253788f49f215&units=metric');
+    const data = await response.json();
+    displayWeather(data);
 }
 
-function displayResults(data) {
-    const iconsrc = `https://openweathermap.org/img/w/${data.weather[0].icon}.png`;
-    const desc = data.weather[0].description;
-    weatherIcon.setAttribute('src', iconsrc);
-    weatherIcon.setAttribute('alt', desc);
-    captionDesc.innerHTML = `Today's: ${data.main.temp}°F - ${desc}`;
+async function fetchForecast() {
+    const response = await fetch('https://api.openweathermap.org/data/2.5/forecast?q=Cozumel&appid=ab520e4710bc7b1e7a9253788f49f215&units=metric');
+    const data = await response.json();
+    const forecast = data.list.find(forecast => forecast.dt_txt.endsWith("15:00:00"));
+    displayForecast(forecast);
 }
 
-function fetchForecastData() {
-    fetch(forecastUrl)
-        .then(response => response.json())
-        .then(data => {
-            forecastContainer.innerHTML = '';
-            for (let i = 0; i < 3; i++) {
-                const forecast = data.list[i * 8]; // 3-hour intervals, 8 per day
-                const date = new Date(forecast.dt * 1000);
-                const temp = forecast.main.temp;
-                const icon = `https://openweathermap.org/img/w/${forecast.weather[0].icon}.png`;
-                const description = forecast.weather[0].description;
+function displayWeather(data) {
+    const weatherDiv = document.getElementById('current-weather');
+    const temp = Math.round(data.main.temp);
+    weatherDiv.innerHTML = `
+        <h2>Today's Weather</h2>
+        <div class="current-weather">
+        <img src="http://openweathermap.org/img/wn/${data.weather[0].icon}.png" alt="${data.weather[0].description}">
+        <p>${data.weather[0].main} (${data.weather[0].description})</p>
+        <p>${temp}°C</p>
+        <p>${data.main.humidity}% Humidity</p>
+        </div>
+    `;
 
-                const forecastElement = document.createElement('figure');
-                forecastElement.classList.add('weather-figure');
+    // Display high temperature in the banner
+    const banner = document.getElementById('high-temp-message');
+    const tempMax = Math.round(data.main.temp_max);
+    banner.textContent = `The highest temperature for today is ${tempMax}°C.`;
 
-                const forecastIcon = document.createElement('img');
-                forecastIcon.src = icon;
-                forecastIcon.alt = description;
-
-                const forecastCaption = document.createElement('figcaption');
-                forecastCaption.textContent = `${date.toLocaleDateString()}: ${temp}°F - ${description}`;
-
-                forecastElement.appendChild(forecastIcon);
-                forecastElement.appendChild(forecastCaption);
-                forecastContainer.appendChild(forecastElement);
-            }
-        })
-        .catch(error => console.error('Error fetching forecast data:', error));
 }
+
+function displayForecast(data) {
+    const forecastDiv = document.getElementById('forecast-weather');
+    const temp = Math.round(data.main.temp);
+    forecastDiv.innerHTML = `
+        <h2>Tomorrow's Weather</h2>
+        <div class="forecast-weather">
+        <img src="http://openweathermap.org/img/wn/${data.weather[0].icon}.png" alt="${data.weather[0].description}">
+        <p>Tomorrow at 3:00 PM: ${temp}°C</p>
+        </div>
+    `;
+}
+
+fetchWeather();
+fetchForecast();
