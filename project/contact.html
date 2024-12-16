@@ -51,75 +51,39 @@
         <button id="menu"></button>
 
     </header>
-    <main class="discover-main">
-        <aside class="discover-sidebar">
+    <main class="reservations">
+        <aside class="reservations-sidebar">
 
-            <section class="card">
-                <h3>NP (Non-Profit) Membership</h3>
-                <h4>Cost: Free <br><br>Benefits:
-                    <br>- Access to Chamber events
-                    <br>- Networking with local businesses
-                    <br>- Listing on the Chamber website
+            <section class="agreement">
+                <h3>Scoots Motor Scooter Rental Agreement</h3>
+                <h4>This Rental Agreement is entered into by and between Scoots (the "Company"), a
+                    motor scooter rental service located on the island of Cozumel, Mexico, and the undersigned customer
+                    (the "Renter"). By submiting this form, the Renter agrees to abide by all the terms and
+                    conditions set forth below.
                 </h4>
             </section>
-            <section class="card">
-                <h3>Bronze Membership</h3>
-                <h4>Cost: $200 per year <br><br>Benefits:
-                    <br>- Chamber directory listing
-                    <br>- Invitation to general networking events
-                    <br>- Discounted rates on events and programs
-                    <br>- Access to basic business development resources
-                </h4>
-
-            </section>
-            <section class="card">
-                <h3>Silver Membership</h3>
-                <h4>Cost: $500 per year<br><br>Benefits:
-                    <br>- All Bronze level benefits
-                    <br>- Spotlight position on the Chamber homepage
-                    <br>- Invitations to special events, webinars, and training sessions
-                    <br>- Access to advanced business development resources
-                    <br>- Discounted advertising opportunities
-                </h4>
-            </section>
-            <section class="card">
-                <h3>Gold Membership </h3>
-                <h4>Cost: $1,000 per year <br><br>Benefits:
-                    <br>- All Silver level benefits
-                    <br>- Featured in the Chamber monthly newsletter
-                    <br>- VIP invitations to exclusive events
-                    <br>- Free or highly discounted event sponsorships
-                    <br>- Complimentary training and business consulting sessions
+            <section class="agreement">
+                <h3>Scoots Motor Scooter Rental Agreement</h3>
+                <h4>This Rental Agreement is entered into by and between Scoots (the "Company"), a
+                    motor scooter rental service located on the island of Cozumel, Mexico, and the undersigned customer
+                    (the "Renter"). By submiting this form, the Renter agrees to abide by all the terms and
+                    conditions set forth below.
                 </h4>
             </section>
         </aside>
         <form method="get" action="thankyou.html" class="wf1">
-            <h1>Join the Chamber</h1>
+            <h2>Contact Us</h2>
             <fieldset>
                 <div id="form-message"></div>
                 <label> First Name* <input type="text" id="fname" name="fname" required autofocus></label>
                 <label> Last Name* <input type="text" id="lname" name="lname" required></label>
-                <label> Title / Position* <input type="text" id="title" name="title" pattern="^[A-Za-z0-9-\s]{7,}$"
-                        title="Only letters, numbers, hyphens, and spaces allowed. Min 7 characters." required></label>
                 <label> Email address* <input type="email" id="email" name="email" placeholder="example@gmail.com"
                         required></label>
-                <label> Mobile phone number* <input type="tel" id="phone" name="phone" required></label>
-                <label> Business / Organization's name* <input type="text" id="business" name="business"
-                        required></label>
-                <label>Membership level
-                    <select name="Membership">
-                        <option value="">Please Select</option>
-                        <option value="np"> NP Membership</option>
-                        <option value="bronze"> Bronze Membership</option>
-                        <option value="silver"> Silver Membership</option>
-                        <option value="gold"> Gold Membership</option>
-                    </select>
-                </label>
-                <label>Business / Organization's description<textarea name="org-description" id="org-description"
-                        rows="6"></textarea></label>
+                <label> Mobile phone number* <input type="tel" id="phone" name="phone"></label>
+                <label>Comments<textarea name="org-description" id="org-description" rows="6"></textarea></label>
 
                 <input type="hidden" name="timestamp" id="timestamp">
-                <input type="submit" value="Join the Chamber">
+                <input type="submit" value="Contact me">
 
             </fieldset>
         </form>

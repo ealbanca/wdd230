@@ -43,6 +43,7 @@ header {
     position: relative;
     background-color: rgb(208, 218, 81);
     grid-column: 1/4;
+    font-family: "Poppins", sans-serif;
 }
 
 .banner.active {
@@ -183,10 +184,11 @@ h2 {
     outline: 0;
     display: inline-block;
     padding: 10px 25px;
-    color: black;
+    color: white;
     background-color: var(--button);
     text-align: center;
     cursor: pointer;
+    font-family: "Poppins", sans-serif;
 }
 
 .herolabel button:hover,
@@ -230,6 +232,7 @@ h2 {
     background-color: white;
     padding: 1rem;
     margin-bottom: 1rem;
+    font-family: "Poppins", sans-serif;
 }
 
 iframe {
@@ -331,9 +334,17 @@ tr:hover {
 }
 
 .subpage-title {
+    margin-top: 1rem;
     background-color: white;
     width: 100%;
     grid-column: 1/4;
+    font-family: "Poppins", sans-serif;
+}
+
+hr {
+    width: 150px;
+    margin: auto;
+    margin-bottom: 1.5rem;
 }
 
 
@@ -361,6 +372,7 @@ tr:hover {
     margin: 10px;
     text-align: left;
     overflow: hidden;
+    font-family: "Poppins", sans-serif;
 }
 
 .rental-card picture,
@@ -391,7 +403,7 @@ tr:hover {
 
 .rental-card .rental-content .learn-more,
 .rental-card-subpage .rental-content .learn-more {
-    font-family: 'Oswald', Arial, sans-serif;
+    font-family: "Poppins", sans-serif;
     display: inline-block;
     margin-top: 15px;
     padding: 10px 20px;
@@ -420,6 +432,9 @@ tr:hover {
     max-width: 600px;
 }
 
+.subpage-main p {
+    font-family: "Poppins", sans-serif;
+}
 
 
 /* -- Reservations Page -- */
@@ -437,7 +452,9 @@ tr:hover {
 }
 
 form h2 {
-    text-align: center;
+    text-align: left;
+    margin-top: 1rem;
+    margin-left: 3.5rem;
 }
 
 
@@ -449,6 +466,7 @@ form h2 {
     font-size: 2rem;
     color: black;
     margin-left: 1rem;
+    margin-right: 1rem;
 }
 
 .wf1 label {
@@ -471,7 +489,7 @@ form h2 {
     padding: .75rem;
     color: #555;
     width: 100%;
-    max-width: 400px;
+    max-width: 500px;
     appearance: none;
 }
 
@@ -483,7 +501,7 @@ form h2 {
     padding: .75rem;
     color: #555;
     width: 100%;
-    max-width: 400px;
+    max-width: 500px;
 }
 
 .wf1 input:required {
@@ -501,7 +519,7 @@ form h2 {
     border-radius: 6px;
     padding: .8rem;
     width: 96%;
-    max-width: 400px;
+    max-width: 500px;
     margin-top: 2rem;
     box-shadow: 1px 1px 4px #999;
     font-weight: 400;
