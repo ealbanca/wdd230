@@ -51,15 +51,120 @@
         <button id="menu"></button>
 
     </header>
-    <main>
 
-        <section id="directory">
-            <div class="view-toggle">
-                <button id="grid-view">⬜ Grid View</button>
-                <button id="list-view">☰ List View</button>
+    <main class="reservations">
+        <div class="hero">
+            <picture>
+                <source srcset="images/reservations-hero-small.webp" media="(max-width:400px)" type="image/webp">
+                <source srcset="images/reservations-hero-medium.webp" media="(min-width: 401px)" type="image/webp">
+                <img src="images/reservations-hero-large.webp" alt="Hero image">
+            </picture>
+            <div class="herolabel">
+                <h1>Reservations</h1>
             </div>
-            <div id="members" class="grid-view"></div>
-        </section>
+        </div>
+        <aside class="reservations-sidebar">
+
+            <section class="agreement">
+                <h3>Scoots Motor Scooter Rental Agreement</h3>
+                <h4>This Rental Agreement is entered into by and between Scoots (the "Company"), a
+                    motor scooter rental service located on the island of Cozumel, Mexico, and the undersigned customer
+                    (the "Renter"). By submiting this form, the Renter agrees to abide by all the terms and
+                    conditions set forth below.
+                </h4>
+            </section>
+            <section class="agreement">
+                <h3>Insurance and Liability</h3>
+                <h4>Insurance Coverage: The Company offers basic insurance for the rental period. Optional full coverage
+                    can be purchased at an additional cost. The Renter is responsible for any damages, theft, or loss
+                    not covered by the insurance.
+
+                    - Basic Insurance Coverage: Covers third-party liability (damages to others).
+                    - Full Coverage (Optional): Covers damage to the rental vehicle, theft, and personal accident
+                    insurance.
+                </h4>
+            </section>
+            <section class="agreement">
+                <h3>Renter's Responsibility</h3>
+                <h4>The Renter agrees to:
+
+                    - Operate the vehicle in a safe and lawful manner.
+                    - Ensure the vehicle is securely parked when not in use.
+                    - Be responsible for any damage, loss, or theft not covered by insurance.
+                    - Follow local traffic laws and regulations.
+                    - Wear a helmet and other safety gear (if applicable).
+                </h4>
+            </section>
+            <section class="agreement">
+                <h3>Rental Conditions</h3>
+                <h4>Age Requirement: Renters must be at least 18 years old to rent a motor scooter, and at least 21
+                    years old for ATVs and jeeps.
+                    License Requirement: A valid driver’s license must be presented at the time of rental. International
+                    drivers may use a valid driver’s license from their home country or an International Driver’s
+                    Permit.
+
+                    Safety:
+                    - Helmets are required for motor scooter rentals.
+                    - Renter agrees to follow all traffic regulations and road signs.
+                    - Alcohol and drug use are prohibited while operating the rental vehicle.
+                </h4>
+            </section>
+            <section class="agreement">
+                <h3>Cancellation and Refunds</h3>
+                <h4>Cancellation Policy: Cancellations made more than 48 hours prior to the rental start time will
+                    receive a full refund. Cancellations made within 48 hours of the rental start time will incur a
+                    cancellation fee of 50% of the total rental cost.
+                    No-Show Policy: If the Renter fails to show up for the scheduled rental, no refund will be issued.
+                </h4>
+            </section>
+            <section class="agreement">
+                <h3>Return of Vehicle</h3>
+                <h4>The Renter agrees to return the vehicle to the designated location by the agreed time and date. A
+                    late fee will apply for vehicles returned after the scheduled return time, and the Company reserves
+                    the right to charge additional fees for excessive mileage.
+                </h4>
+            </section>
+        </aside>
+        <form method="get" action="thankyou.html" class="wf1">
+            <h2>Rental agreement form</h2>
+            <fieldset>
+                <div id="form-message"></div>
+                <label> First Name* <input type="text" id="fname" name="fname" required autofocus></label>
+                <label> Last Name* <input type="text" id="lname" name="lname" required></label>
+                <label> Email address* <input type="email" id="email" name="email" placeholder="example@gmail.com"
+                        required></label>
+                <label> Mobile phone number* <input type="tel" id="phone" name="phone" required></label>
+                <label> Home State/Country* <input type="text" id="state" name="state" required></label>
+                <label> Cruise line (if applicable)<input type="text" id="cruise" name="cruise"></label>
+                <label>Rental Vehicle
+                    <select name="vehicle">
+                        <option value="">Please Select</option>
+                        <option value="hm"> Honda Metropolitan (49cc) - 1 person</option>
+                        <option value="hd"> Honda Dio (110cc) - 2 person</option>
+                        <option value="hpcx"> Honda PCX150 (149cc) - 2 person</option>
+                        <option value="hp"> Honda Pioneer 1000 - 4 person</option>
+                        <option value="jw4"> Jeep Wrangler - 4 door manuel with A/C - 5 person</option>
+                        <option value="jw2"> Jeep Wrangler - 2 door - open air - manuel - 4 person</option>
+                    </select>
+                </label>
+                <label for="date">Rental Date:
+                    <input type="date" id="date" name="date" required>
+                </label>
+                <label for="period">Rental Period:
+                    <select id="period" name="period" required>
+                        <option value="">Select a Period</option>
+                        <option value="half-day">Half Day</option>
+                        <option value="full-day">Full Day</option>
+                    </select>
+                </label>
+                <label>Special accommodations/comments<textarea name="org-description" id="org-description"
+                        rows="6"></textarea></label>
+
+                <input type="hidden" name="timestamp" id="timestamp">
+                <input type="submit" value="Submit Reservation">
+
+            </fieldset>
+        </form>
 
     </main>
 

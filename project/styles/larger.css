@@ -101,29 +101,21 @@
         grid-template-columns: 1fr 1fr 1fr;
     }
 
-    /*Discover page */
-    .discover-sidebar {
+    /*Reservations page */
+
+    .reservations-sidebar {
         grid-column: 1 / 2;
     }
 
-    .discover-main {
+    .reservations {
         grid-template-columns: 1fr 3fr;
     }
 
-    .discover-main-content {
-        grid-column: 2 / 3;
-    }
-
-    .gallery {
-        grid-template-columns: 1fr 1fr;
-    }
-
-    .gallery img:hover {
-        transform: scale(1.05);
-    }
 
     .confirmation-main-container {
         text-align: center;
         grid-template-columns: 1fr;
     }
+
+
 }
