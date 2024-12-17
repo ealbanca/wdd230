@@ -531,96 +531,10 @@ form h2 {
     grid-template-columns: 1fr;
 }
 
-/* ---- Directory Page --- 
+/* --Confirmation page --*/
 
-#directory {
-    grid-column: 1/4;
-}
-
-.view-toggle {
-    margin-bottom: 20px;
-    text-align: center;
-}
-
-.grid-view {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-    grid-gap: 05px;
-    align-items: center;
-    font-family: "Poppins", sans-serif;
-    font-size: 0.9rem;
-}
-
-#members.grid-view h3 {
-    font-size: 1rem;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-}
-
-#members.grid-view p {
-    margin-bottom: 0.5rem;
-}
-
-#grid-view,
-#list-view {
-    margin-bottom: 1rem;
-    border: none;
-    background-image: linear-gradient(#0d4399, #072453);
-    color: #fff;
-    border-radius: 6px;
-    padding: .8rem;
-    width: 96%;
-    max-width: 140px;
-    margin-top: 2rem;
-    box-shadow: 1px 1px 4px #999;
-    font-weight: 300;
-    font-size: medium;
+.confirmation-main-container p {
+    margin: 4rem 0 4rem 0;
     font-family: "Poppins", sans-serif;
 
 }
-
-.member {
-    border: 1px solid #ddd;
-    padding: 1rem;
-    border-radius: 8px;
-    background: #fff;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-}
-
-#members.list-view {
-    display: block;
-    font-family: "Poppins", sans-serif;
-    font-size: 0.9rem;
-}
-
-#members.list-view h3 {
-    font-size: 1rem;
-    margin-bottom: 1rem;
-}
-
-#members.list-view p {
-    margin-bottom: 0.5rem;
-}
-
-#members.list-view .member {
-    flex-direction: row;
-    text-align: left;
-    border-radius: 0px;
-}
-
-#members.list-view .member img {
-    display: none;
-}
-
-
-#members,
-#business-spotlight {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 1rem;
-    border-radius: 6px;
-}
-    */
