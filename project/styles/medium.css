@@ -64,6 +64,10 @@
         grid-column: 1/4;
     }
 
+    .herolabel button {
+        font-size: large;
+    }
+
     .message {
         grid-column: 1/4;
     }
@@ -96,25 +100,10 @@
         grid-template-columns: 1fr 1fr;
     }
 
-    /*Discover page */
-    .discover-sidebar {
-        grid-column: 1 / 2;
-    }
+    /*-- Reservations Page --*/
 
-    .discover-main {
-        grid-template-columns: 1fr 3fr;
-    }
-
-    .discover-main-content {
-        grid-column: 2 / 3;
-    }
-
-    .gallery {
-        grid-template-columns: 1fr 1fr;
-    }
-
-    .gallery img:hover {
-        transform: scale(1.05);
+    .wf1 input[type="submit"] {
+        font-size: large;
     }
 
     .confirmation-main-container {

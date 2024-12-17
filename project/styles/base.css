@@ -154,7 +154,7 @@ main {
 
 h1 {
     font-family: "Poppins", sans-serif;
-    font-size: 1.25rem;
+    font-size: 1.4rem;
 }
 
 h4 {
@@ -188,6 +188,7 @@ h2 {
     text-align: center;
     cursor: pointer;
     font-family: "Poppins", sans-serif;
+    font-size: small;
 }
 
 .herolabel button:hover,
@@ -215,6 +216,7 @@ h2 {
     padding: 1rem;
     margin: 0 1rem 1rem 1rem;
     font-family: "Poppins", sans-serif;
+    font-size: medium;
 }
 
 .honda-scooters figcaption,
@@ -232,6 +234,7 @@ h2 {
     padding: 1rem;
     margin-bottom: 1rem;
     font-family: "Poppins", sans-serif;
+    font-size: medium;
 }
 
 iframe {
@@ -333,7 +336,6 @@ tr:hover {
 }
 
 .subpage-title {
-    margin: 1rem 1rem 0 1rem;
     background-color: white;
     width: 100%;
     grid-column: 1/4;
@@ -411,7 +413,7 @@ hr {
     text-decoration: none;
     border-radius: 4px;
     transition: background-color 0.3s ease;
-    font-size: 1.5em;
+    font-size: 1rem;
     letter-spacing: 0.07em;
 }
 
@@ -433,10 +435,22 @@ hr {
 
 .subpage-main p {
     font-family: "Poppins", sans-serif;
+    margin: 1rem 1rem 1rem 1rem;
+    font-size: medium;
 }
 
+#scooters,
+#jeeps,
+#atvs {
+    font-size: medium;
+}
 
 /* -- Reservations Page -- */
+
+.reservations-sidebar {
+    font-family: "Poppins", sans-serif;
+    font-size: medium;
+}
 
 .agreement h3 {
     margin-bottom: 1rem;
@@ -453,7 +467,7 @@ hr {
 form h2 {
     text-align: left;
     margin-top: 1rem;
-    margin-left: 3.5rem;
+    margin-left: 1.2rem;
 }
 
 
@@ -472,8 +486,10 @@ form h2 {
     display: block;
     padding-top: 1rem;
     color: black;
-    font-size: 1.5rem;
+    font-size: medium;
     font-weight: 300;
+    font-family: "Poppins", sans-serif;
+
 }
 
 .wf1 input[type="text"],
@@ -523,11 +539,7 @@ form h2 {
     box-shadow: 1px 1px 4px #999;
     font-weight: 400;
     font-family: "Poppins", sans-serif;
-}
-
-.confirmation-main-container {
-    text-align: center;
-    grid-template-columns: 1fr;
+    font-size: medium;
 }
 
 /* --Confirmation page --*/
@@ -535,5 +547,7 @@ form h2 {
 .confirmation-main-container p {
     margin: 4rem 0 4rem 0;
     font-family: "Poppins", sans-serif;
+    text-align: center;
+    grid-template-columns: 1fr;
 
 }

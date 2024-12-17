@@ -70,8 +70,22 @@
         object-fit: cover;
     }
 
+    .herolabel button,
+    .atvs button,
+    .honda-scooters button,
+    .jeeps button {
+        font-size: larger;
+    }
+
     .message {
         grid-column: 1/4;
+        font-size: large;
+    }
+
+    .honda-scooters,
+    .jeeps,
+    .atvs {
+        font-size: large;
     }
 
     .jeeps img,
@@ -102,14 +116,38 @@
         grid-template-columns: 1fr 1fr 1fr;
     }
 
+    /*Rentals page */
+
+    #scooters,
+    #jeeps,
+    #atvs,
+    .subpage-main p {
+        font-size: large;
+    }
+
     /*Reservations page */
 
     .reservations-sidebar {
         grid-column: 1 / 2;
+        font-size: larger;
     }
 
     .reservations {
         grid-template-columns: 1fr 3fr;
+    }
+
+    form h2 {
+        margin-left: 3rem;
+    }
+
+
+    .wf1 label {
+        font-size: large;
+    }
+
+
+    .wf1 input[type="submit"] {
+        font-size: larger;
     }
 
 
